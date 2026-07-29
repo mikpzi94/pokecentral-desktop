@@ -1,0 +1,15 @@
+const { app, BrowserWindow } = require('electron')
+const path = require('node:path')
+const fs = require('node:fs')
+const { pathToFileURL } = require('node:url')
+app.whenReady().then(async()=>{
+  const videoPath=path.join(__dirname,'..','docs','AUTORIZACAO_STAFF_0.12.2','VIDEO_DEMONSTRACAO_POKECENTRAL_0.12.2.mp4')
+  const win=new BrowserWindow({width:1280,height:720,show:false,webPreferences:{backgroundThrottling:false,webSecurity:false}})
+  await win.loadURL('data:text/html;charset=utf-8,'+encodeURIComponent('<style>html,body{margin:0;background:#000}video{width:1280px;height:720px}</style><video id="v" controls></video>'))
+  const url=pathToFileURL(videoPath).href
+  const metadata=await win.webContents.executeJavaScript(`new Promise((resolve,reject)=>{const v=document.getElementById('v');v.onloadedmetadata=()=>resolve({duration:v.duration,width:v.videoWidth,height:v.videoHeight,seekable:v.seekable.length>0});v.onerror=()=>reject(new Error('Falha ao carregar vídeo'));v.src=${JSON.stringify(url)}})`)
+  await win.webContents.executeJavaScript(`new Promise(resolve=>{const v=document.getElementById('v');v.onseeked=resolve;v.currentTime=Math.min(82,v.duration/2)})`)
+  const image=await win.webContents.capturePage();fs.writeFileSync(path.join(__dirname,'..','docs','AUTORIZACAO_STAFF_0.12.2','VIDEO_QUADRO_DE_VALIDACAO.png'),image.toPNG())
+  fs.writeFileSync(path.join(__dirname,'..','docs','AUTORIZACAO_STAFF_0.12.2','VIDEO_VALIDACAO.json'),JSON.stringify(metadata,null,2))
+  win.destroy();app.exit(metadata.duration>160&&metadata.width===1280&&metadata.height===720?0:1)
+}).catch(error=>{console.error(error);app.exit(1)})

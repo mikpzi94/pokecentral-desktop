@@ -1,0 +1,12 @@
+ANÁLISE LOCAL — MICROSOFT DEFENDER
+
+Arquivo: PokeCentral Desktop Setup 0.12.2.exe
+SHA-256: D7AD23C7425007931793210CD5B03D85EA585EE4FC99D48193E18096B2AF4B5F
+Início: 2026-07-24 11:53:50 -03:00
+Fim: 2026-07-24 11:53:51 -03:00
+Defender ativo: True
+Proteção em tempo real: True
+Versão da inteligência: 1.455.286.0
+Detecções relacionadas ao arquivo: 0
+
+Observação: esta análise local não substitui um relatório público do VirusTotal.

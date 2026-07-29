@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "quick": {
+    "panel": true,
+    "title": "Inventário rápidoConta 1 · MotoMoto×",
+    "tabs": [
+      "Tudo5",
+      "Pokémon2",
+      "Bolas1",
+      "Itens2"
+    ],
+    "cells": 5,
+    "gridStillActive": true,
+    "quickSelected": true,
+    "overflow": "hidden"
+  },
+  "balls": {
+    "cells": 1,
+    "label": "Ultra Ball · 8.999"
+  },
+  "expanded": {
+    "selected": true,
+    "gridActive": false
+  }
+}

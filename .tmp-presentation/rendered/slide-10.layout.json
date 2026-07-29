@@ -1,0 +1,1619 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/5jm420",
+    "id": "5jm420",
+    "slide": 10,
+    "layoutId": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#12100C",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Courier New"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ixwzqlkz",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0B429",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/50nyl03q",
+      "id": "2",
+      "bbox": [
+        44,
+        40,
+        3,
+        640
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4zehsv25",
+      "id": "3",
+      "bbox": [
+        68,
+        34,
+        470,
+        26
+      ],
+      "geometry": "rect",
+      "text": "PRÓXIMO PASSO",
+      "textPreview": "PRÓXIMO PASSO",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#F0B429",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PRÓXIMO PASSO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PRÓXIMO PASSO",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#F0B429",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PRÓXIMO PASSO",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#F0B429",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vulgfql8",
+      "id": "4",
+      "bbox": [
+        1168,
+        34,
+        46,
+        26
+      ],
+      "geometry": "rect",
+      "text": "10",
+      "textPreview": "10",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#736450",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/utcfmlk3",
+      "id": "5",
+      "bbox": [
+        68,
+        666,
+        1144,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwnyhg3e",
+      "id": "6",
+      "bbox": [
+        68,
+        680,
+        680,
+        18
+      ],
+      "geometry": "rect",
+      "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "textPreview": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+              "fontSize": 11,
+              "typeface": "Courier New",
+              "color": "#736450"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvexob2t",
+      "id": "7",
+      "bbox": [
+        68,
+        78,
+        1144,
+        60
+      ],
+      "geometry": "rect",
+      "text": "O próximo marco é uma beta pequena e verificável.",
+      "textPreview": "O próximo marco é uma beta pequena e verificável.",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 38,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "O próximo marco é uma beta pequena e verificável."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "O próximo marco é uma beta pequena e verificável.",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O próximo marco é uma beta pequena e verificável.",
+              "fontSize": 38,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/76lgb6lc",
+      "id": "8",
+      "bbox": [
+        68,
+        142,
+        1100,
+        46
+      ],
+      "geometry": "rect",
+      "text": "A evolução comercial acontece depois de validar instalação, segurança e entendimento do usuário.",
+      "textPreview": "A evolução comercial acontece depois de validar instalação, segurança e entendimento do usuário.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A evolução comercial acontece depois de validar instalação, segurança e entendimento do usuário."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A evolução comercial acontece depois de validar instalação, segurança e entendimento do usuário.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A evolução comercial acontece depois de validar instalação, segurança e entendimento do usuário.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m5cfi1kr",
+      "id": "9",
+      "bbox": [
+        68,
+        194,
+        94,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0B429",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s76tcza9",
+      "id": "10",
+      "bbox": [
+        68,
+        246,
+        64,
+        38
+      ],
+      "geometry": "rect",
+      "text": "01",
+      "textPreview": "01",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Courier New",
+        "color": "#8FC45A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "01",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Courier New",
+            "color": "#8FC45A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "01",
+              "fontSize": 24,
+              "typeface": "Courier New",
+              "color": "#8FC45A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8fal4bu",
+      "id": "11",
+      "bbox": [
+        68,
+        294,
+        238,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#8FC45A",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qlora9s3",
+      "id": "12",
+      "bbox": [
+        68,
+        322,
+        238,
+        34
+      ],
+      "geometry": "rect",
+      "text": "VALIDAR",
+      "textPreview": "VALIDAR",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "VALIDAR"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "VALIDAR",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "VALIDAR",
+              "fontSize": 18,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmxsjuto",
+      "id": "13",
+      "bbox": [
+        68,
+        382,
+        238,
+        142
+      ],
+      "geometry": "rect",
+      "text": "Instalação limpa\nLinks e contatos\nPersistência das sessões",
+      "textPreview": "Instalação limpa | Links e contatos | Persistência das sessões",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Instalação limpa"
+          },
+          {
+            "index": 2,
+            "text": "Links e contatos"
+          },
+          {
+            "index": 3,
+            "text": "Persistência das sessões"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Instalação limpa",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Instalação limpa",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Links e contatos",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Links e contatos",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Persistência das sessões",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Persistência das sessões",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4j698zad",
+      "id": "14",
+      "bbox": [
+        354,
+        246,
+        64,
+        38
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Courier New",
+        "color": "#4A90C2",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Courier New",
+            "color": "#4A90C2",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 24,
+              "typeface": "Courier New",
+              "color": "#4A90C2",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5kfah4by",
+      "id": "15",
+      "bbox": [
+        354,
+        294,
+        238,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A90C2",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ihor6ps7",
+      "id": "16",
+      "bbox": [
+        354,
+        322,
+        238,
+        34
+      ],
+      "geometry": "rect",
+      "text": "TESTAR",
+      "textPreview": "TESTAR",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TESTAR"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TESTAR",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TESTAR",
+              "fontSize": 18,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ixsfuts",
+      "id": "17",
+      "bbox": [
+        354,
+        382,
+        238,
+        142
+      ],
+      "geometry": "rect",
+      "text": "Grupo pequeno\nFeedback documentado\nCorreções prioritárias",
+      "textPreview": "Grupo pequeno | Feedback documentado | Correções prioritárias",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Grupo pequeno"
+          },
+          {
+            "index": 2,
+            "text": "Feedback documentado"
+          },
+          {
+            "index": 3,
+            "text": "Correções prioritárias"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Grupo pequeno",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Grupo pequeno",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Feedback documentado",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Feedback documentado",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Correções prioritárias",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Correções prioritárias",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ofqtkjah",
+      "id": "18",
+      "bbox": [
+        640,
+        246,
+        64,
+        38
+      ],
+      "geometry": "rect",
+      "text": "03",
+      "textPreview": "03",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Courier New",
+        "color": "#A878C4",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "03"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "03",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Courier New",
+            "color": "#A878C4",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "03",
+              "fontSize": 24,
+              "typeface": "Courier New",
+              "color": "#A878C4",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pgjatob2",
+      "id": "19",
+      "bbox": [
+        640,
+        294,
+        238,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#A878C4",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkv2hkzu",
+      "id": "20",
+      "bbox": [
+        640,
+        322,
+        238,
+        34
+      ],
+      "geometry": "rect",
+      "text": "PUBLICAR",
+      "textPreview": "PUBLICAR",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PUBLICAR"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PUBLICAR",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PUBLICAR",
+              "fontSize": 18,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cjm1ozy9",
+      "id": "21",
+      "bbox": [
+        640,
+        382,
+        238,
+        142
+      ],
+      "geometry": "rect",
+      "text": "Página do produto\nPrivacidade e termos\nDownload verificável",
+      "textPreview": "Página do produto | Privacidade e termos | Download verificável",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Página do produto"
+          },
+          {
+            "index": 2,
+            "text": "Privacidade e termos"
+          },
+          {
+            "index": 3,
+            "text": "Download verificável"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Página do produto",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Página do produto",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Privacidade e termos",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Privacidade e termos",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Download verificável",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Download verificável",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bid0fuh4",
+      "id": "22",
+      "bbox": [
+        926,
+        246,
+        64,
+        38
+      ],
+      "geometry": "rect",
+      "text": "04",
+      "textPreview": "04",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Courier New",
+        "color": "#F0B429",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "04"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "04",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Courier New",
+            "color": "#F0B429",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "04",
+              "fontSize": 24,
+              "typeface": "Courier New",
+              "color": "#F0B429",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahkjmpgj",
+      "id": "23",
+      "bbox": [
+        926,
+        294,
+        238,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0B429",
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwbidkzy",
+      "id": "24",
+      "bbox": [
+        926,
+        322,
+        238,
+        34
+      ],
+      "geometry": "rect",
+      "text": "LANÇAR",
+      "textPreview": "LANÇAR",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "LANÇAR"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "LANÇAR",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "LANÇAR",
+              "fontSize": 18,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ov21kfyd",
+      "id": "25",
+      "bbox": [
+        926,
+        382,
+        238,
+        142
+      ],
+      "geometry": "rect",
+      "text": "Licença de uso\nSuporte definido\nAtualizações controladas",
+      "textPreview": "Licença de uso | Suporte definido | Atualizações controladas",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Licença de uso"
+          },
+          {
+            "index": 2,
+            "text": "Suporte definido"
+          },
+          {
+            "index": 3,
+            "text": "Atualizações controladas"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Licença de uso",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Licença de uso",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Suporte definido",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Suporte definido",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Atualizações controladas",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Atualizações controladas",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nut0bahs",
+      "id": "26",
+      "bbox": [
+        68,
+        584,
+        610,
+        34
+      ],
+      "geometry": "rect",
+      "text": "PokeCentral Desktop",
+      "textPreview": "PokeCentral Desktop",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PokeCentral Desktop"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PokeCentral Desktop",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PokeCentral Desktop",
+              "fontSize": 24,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2tkji5g7",
+      "id": "27",
+      "bbox": [
+        68,
+        622,
+        930,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Uma central local para organizar antes de compartilhar.",
+      "textPreview": "Uma central local para organizar antes de compartilhar.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#F0B429",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Uma central local para organizar antes de compartilhar."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Uma central local para organizar antes de compartilhar.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#F0B429",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Uma central local para organizar antes de compartilhar.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#F0B429"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

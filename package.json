@@ -1,0 +1,78 @@
+{
+    "name":  "pokecentral-desktop",
+    "version":  "0.18.0",
+    "description":  "Dashboard local para organizar contas e inventarios do PokeCentral.",
+    "main":  "./out/main/index.js",
+    "author":  "PokeCentral",
+    "license":  "UNLICENSED",
+    "private":  true,
+    "scripts":  {
+                    "dev":  "electron-vite dev",
+                    "build":  "electron-vite build",
+                    "preview":  "electron-vite preview",
+                    "typecheck":  "tsc --noEmit",
+                    "dist:win":  "npm run build \u0026\u0026 electron-builder --win nsis"
+                },
+    "dependencies":  {
+                         "@electron-toolkit/preload":  "^3.0.2",
+                         "@electron-toolkit/utils":  "^4.0.0",
+                         "react":  "^19.2.0",
+                         "react-dom":  "^19.2.0",
+                         "zod":  "^4.1.12",
+                         "@fontsource/ibm-plex-mono":  "^5.2.7",
+                         "@fontsource/press-start-2p":  "^5.2.7"
+                     },
+    "devDependencies":  {
+                            "@types/node":  "^24.10.1",
+                            "@types/react":  "^19.2.7",
+                            "@types/react-dom":  "^19.2.3",
+                            "@vitejs/plugin-react":  "^5.1.1",
+                            "electron":  "^43.2.0",
+                            "electron-builder":  "^26.15.6",
+                            "electron-vite":  "^5.0.0",
+                            "typescript":  "^5.9.3",
+                            "vite":  "^7.2.4"
+                        },
+    "build":  {
+                  "appId":  "br.com.pokecentral.desktop",
+                  "productName":  "PokeCentral Desktop",
+                  "asar":  true,
+                  "directories":  {
+                                      "output":  "release"
+                                  },
+                  "files":  [
+                                "out/**/*",
+                                "package.json"
+                            ],
+                  "win":  {
+                              "target":  [
+                                             {
+                                                 "target":  "nsis",
+                                                 "arch":  [
+                                                              "x64"
+                                                          ]
+                                             }
+                                         ],
+                              "icon":  "resources/icon.png"
+                          },
+                  "nsis":  {
+                               "oneClick":  false,
+                               "perMachine":  false,
+                               "allowElevation":  false,
+                               "allowToChangeInstallationDirectory":  true,
+                               "createDesktopShortcut":  true,
+                               "createStartMenuShortcut":  true,
+                               "shortcutName":  "PokeCentral Desktop",
+                               "deleteAppDataOnUninstall":  false
+                           },
+                  "extraResources":  [
+                                         {
+                                             "to":  "icon.png",
+                                             "from":  "resources/icon.png"
+                                         }
+                                     ]
+              },
+    "engines":  {
+                    "node":  "\u003e=22"
+                }
+}

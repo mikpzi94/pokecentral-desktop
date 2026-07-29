@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "gridCustom": "120%",
+  "singleDefault": "PADRÃO 70%",
+  "gridRestored": "120%",
+  "gridReloaded": "120%",
+  "singleRestored": "PADRÃO 90%",
+  "filteredSpecies": [
+    "Eevee",
+    "Bronze Boss Token"
+  ],
+  "stayedInventory": true,
+  "showcase": {
+    "code": "PC-1C16AE",
+    "review": true,
+    "localPlayer": true,
+    "placeholder": "Nome ou código PC-..."
+  },
+  "codeSearch": 1,
+  "bronzeVisible": true,
+  "privacy": true,
+  "parser": true
+}

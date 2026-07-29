@@ -1,0 +1,986 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/kagna6",
+    "id": "kagna6",
+    "slide": 7,
+    "layoutId": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#12100C",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Courier New"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/onu9wrad",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0B429",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nml8nmts",
+      "id": "2",
+      "bbox": [
+        44,
+        40,
+        3,
+        640
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2lc7u1s7",
+      "id": "3",
+      "bbox": [
+        68,
+        34,
+        470,
+        26
+      ],
+      "geometry": "rect",
+      "text": "PRINCÍPIOS",
+      "textPreview": "PRINCÍPIOS",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#F0B429",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PRINCÍPIOS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PRINCÍPIOS",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#F0B429",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PRINCÍPIOS",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#F0B429",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1k3qlwb2",
+      "id": "4",
+      "bbox": [
+        1168,
+        34,
+        46,
+        26
+      ],
+      "geometry": "rect",
+      "text": "07",
+      "textPreview": "07",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "07",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#736450",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0japsrah",
+      "id": "5",
+      "bbox": [
+        68,
+        666,
+        1144,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fy18jmtw",
+      "id": "6",
+      "bbox": [
+        68,
+        680,
+        680,
+        18
+      ],
+      "geometry": "rect",
+      "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "textPreview": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+              "fontSize": 11,
+              "typeface": "Courier New",
+              "color": "#736450"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/exs7qhsb",
+      "id": "7",
+      "bbox": [
+        68,
+        78,
+        1144,
+        60
+      ],
+      "geometry": "rect",
+      "text": "O jogador permanece no controle de cada ação.",
+      "textPreview": "O jogador permanece no controle de cada ação.",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 38,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "O jogador permanece no controle de cada ação."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "O jogador permanece no controle de cada ação.",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O jogador permanece no controle de cada ação.",
+              "fontSize": 38,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lgnqxgb6",
+      "id": "8",
+      "bbox": [
+        68,
+        142,
+        1100,
+        46
+      ],
+      "geometry": "rect",
+      "text": "A proposta é organizar informações — nunca substituir a interação humana com o jogo.",
+      "textPreview": "A proposta é organizar informações — nunca substituir a interação humana com o jogo.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A proposta é organizar informações — nunca substituir a interação humana com o jogo."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A proposta é organizar informações — nunca substituir a interação humana com o jogo.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A proposta é organizar informações — nunca substituir a interação humana com o jogo.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kfe94bal",
+      "id": "9",
+      "bbox": [
+        68,
+        194,
+        94,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0B429",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qls3e9w3",
+      "id": "10",
+      "bbox": [
+        88,
+        236,
+        460,
+        32
+      ],
+      "geometry": "rect",
+      "text": "O APLICATIVO FAZ",
+      "textPreview": "O APLICATIVO FAZ",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Courier New",
+        "color": "#8FC45A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "O APLICATIVO FAZ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "O APLICATIVO FAZ",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Courier New",
+            "color": "#8FC45A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O APLICATIVO FAZ",
+              "fontSize": 20,
+              "typeface": "Courier New",
+              "color": "#8FC45A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bm147edo",
+      "id": "11",
+      "bbox": [
+        696,
+        236,
+        470,
+        32
+      ],
+      "geometry": "rect",
+      "text": "O APLICATIVO NÃO FAZ",
+      "textPreview": "O APLICATIVO NÃO FAZ",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "Courier New",
+        "color": "#D4593F",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "O APLICATIVO NÃO FAZ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "O APLICATIVO NÃO FAZ",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "Courier New",
+            "color": "#D4593F",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O APLICATIVO NÃO FAZ",
+              "fontSize": 20,
+              "typeface": "Courier New",
+              "color": "#D4593F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cnulgje9",
+      "id": "12",
+      "bbox": [
+        640,
+        228,
+        2,
+        376
+      ],
+      "geometry": "rect",
+      "fillColor": "#6B5637",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/do3m9ovu",
+      "id": "13",
+      "bbox": [
+        88,
+        296,
+        500,
+        266
+      ],
+      "geometry": "rect",
+      "text": "✓ abre sessões separadas\n✓ organiza dados da própria conta\n✓ consolida inventário\n✓ calcula indicadores locais\n✓ compartilha quando solicitado",
+      "textPreview": "✓ abre sessões separadas | ✓ organiza dados da própria conta | ✓ consolida inventário | ✓ calcula indicadores locais | ✓ compartilha quan...",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Aptos",
+        "color": "#F2E8D5",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "✓ abre sessões separadas"
+          },
+          {
+            "index": 2,
+            "text": "✓ organiza dados da própria conta"
+          },
+          {
+            "index": 3,
+            "text": "✓ consolida inventário"
+          },
+          {
+            "index": 4,
+            "text": "✓ calcula indicadores locais"
+          },
+          {
+            "index": 5,
+            "text": "✓ compartilha quando solicitado"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "✓ abre sessões separadas",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "✓ abre sessões separadas",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "✓ organiza dados da própria conta",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "✓ organiza dados da própria conta",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "✓ consolida inventário",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "✓ consolida inventário",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "✓ calcula indicadores locais",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "✓ calcula indicadores locais",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "✓ compartilha quando solicitado",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "✓ compartilha quando solicitado",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2xs3a9w7",
+      "id": "14",
+      "bbox": [
+        696,
+        296,
+        500,
+        266
+      ],
+      "geometry": "rect",
+      "text": "× não clica nem movimenta\n× não caça nem captura\n× não executa macros\n× não lê memória do processo\n× não coleta senha ou token",
+      "textPreview": "× não clica nem movimenta | × não caça nem captura | × não executa macros | × não lê memória do processo | × não coleta senha ou token",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Aptos",
+        "color": "#F2E8D5",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "× não clica nem movimenta"
+          },
+          {
+            "index": 2,
+            "text": "× não caça nem captura"
+          },
+          {
+            "index": 3,
+            "text": "× não executa macros"
+          },
+          {
+            "index": 4,
+            "text": "× não lê memória do processo"
+          },
+          {
+            "index": 5,
+            "text": "× não coleta senha ou token"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "× não clica nem movimenta",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "× não clica nem movimenta",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "× não caça nem captura",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "× não caça nem captura",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "× não executa macros",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "× não executa macros",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "× não lê memória do processo",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "× não lê memória do processo",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "× não coleta senha ou token",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "× não coleta senha ou token",
+              "fontSize": 22,
+              "typeface": "Aptos",
+              "color": "#F2E8D5"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3y1k3eds",
+      "id": "15",
+      "bbox": [
+        88,
+        584,
+        1098,
+        40
+      ],
+      "geometry": "rect",
+      "text": "SEM AUTOMAÇÃO DE GAMEPLAY",
+      "textPreview": "SEM AUTOMAÇÃO DE GAMEPLAY",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Courier New",
+        "color": "#F0B429",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SEM AUTOMAÇÃO DE GAMEPLAY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SEM AUTOMAÇÃO DE GAMEPLAY",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Courier New",
+            "color": "#F0B429",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SEM AUTOMAÇÃO DE GAMEPLAY",
+              "fontSize": 22,
+              "typeface": "Courier New",
+              "color": "#F0B429",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

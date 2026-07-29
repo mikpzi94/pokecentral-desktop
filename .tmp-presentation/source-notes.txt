@@ -1,0 +1,22 @@
+Comunicação: ao final, administradores, parceiros e potenciais usuários devem
+entender que o PokeCentral Desktop é uma ferramenta local, independente e sem
+automação de gameplay, porque reúne sessões, inventário, análise e
+compartilhamento sob controle explícito do jogador.
+
+Fontes internas:
+- CONTEXTO_POKECENTRAL_DESKTOP.txt
+- DESIGN_SYSTEM.md
+- README.md
+- src/main/index.ts
+- src/preload/index.ts
+
+Ativos visuais:
+- src/renderer/public/icons/logo.png
+- .presentation-assets/launcher-grid.png (captura fornecida pelo usuário)
+- .presentation-assets/inventory.png (captura fornecida pelo usuário)
+- .presentation-assets/laboratory.png (captura fornecida pelo usuário)
+- .presentation-assets/showcase.png (teste smoke-showcase-v12.cjs)
+
+Fonte pública:
+- Princípios de transparência, segurança e necessidade da LGPD:
+  https://www.gov.br/mdr/pt-br/acesso-a-informacao/perguntas-frequentes/perguntas-e-respostas-frequentes-sobre-lgpd/quais-principios-devem-nortear-o

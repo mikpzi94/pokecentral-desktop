@@ -1,0 +1,48 @@
+const { app, BrowserWindow, ipcMain } = require('electron')
+const path = require('node:path')
+const fs = require('node:fs')
+app.whenReady().then(async()=>{
+  for(const channel of ['launcher:hide-layout','launcher:update-layout','launcher:control']) ipcMain.handle(channel,()=>null)
+  ipcMain.handle('launcher:show-layout',(_e,p)=>p.map(({slot})=>({slot,state:'ready',characterName:`Player ${slot}`})))
+  ipcMain.handle('launcher:inventory',()=>null)
+  ipcMain.handle('share:copy-card',()=>null)
+  ipcMain.handle('share:open-url',()=>null)
+  const win=new BrowserWindow({width:1366,height:850,show:false,webPreferences:{preload:path.join(__dirname,'..','out','preload','index.js'),contextIsolation:true,sandbox:true}})
+  await win.loadFile(path.join(__dirname,'..','out','renderer','index.html'))
+  const now=Date.now(), iso=new Date(now).toISOString(), old=new Date(now-6*86400000).toISOString()
+  const state={accounts:[{id:'a1',name:'Conta 1',characterName:'MotoMoto',slot:1,status:'ready',lastSync:iso}],pokemon:[
+    {id:'p1',accountId:'a1',speciesId:6,species:'Charizard',level:1,quality:'1.7',iv:130,shiny:false,source:'assisted',importedAt:iso},
+    {id:'p2',accountId:'a1',speciesId:133,species:'Eevee',level:50,quality:'1.4',iv:120,shiny:false,source:'assisted',importedAt:iso},
+    {id:'p3',accountId:'a1',speciesId:76,species:'Golem',level:100,quality:'1.526',iv:140,shiny:false,source:'assisted',importedAt:iso}
+  ],items:[{id:'bronze',accountId:'a1',name:'Bronze Boss Token',quantity:7,category:'item',importedAt:iso}],listings:[{id:'old-listing',pokemonId:'p3',accountId:'a1',pokemon:{id:'p3',accountId:'a1',speciesId:76,species:'Golem',level:100,quality:'1.526',iv:140,shiny:false,source:'assisted',importedAt:iso},price:1000,negotiable:false,status:'active',createdAt:old,updatedAt:old,priceUpdatedAt:old}]}
+  await win.webContents.executeJavaScript(`localStorage.setItem('pokecentral.desktop.v1',${JSON.stringify(JSON.stringify(state))});localStorage.removeItem('pokecentral.launcher.zoom.v1')`)
+  await win.webContents.reload(); await new Promise(r=>setTimeout(r,250))
+  const plus=`document.querySelector('.game-frame .frame-zoom-group button:last-child').click()`
+  await win.webContents.executeJavaScript(plus); await win.webContents.executeJavaScript(plus); await new Promise(r=>setTimeout(r,80))
+  const gridCustom=await win.webContents.executeJavaScript(`document.querySelector('.frame-zoom-value').textContent`)
+  await win.webContents.executeJavaScript(`document.querySelector('.frame-expand').click()`); await new Promise(r=>setTimeout(r,100))
+  const singleDefault=await win.webContents.executeJavaScript(`document.querySelector('.zoom-reset').textContent`)
+  await win.webContents.executeJavaScript(`[...document.querySelectorAll('.game-toolbar-actions button')].find(x=>x.textContent.includes('ZOOM +')).click()`); await win.webContents.executeJavaScript(`[...document.querySelectorAll('.game-toolbar-actions button')].find(x=>x.textContent.includes('ZOOM +')).click()`)
+  await win.webContents.executeJavaScript(`document.querySelector('.back-to-grid').click()`); await new Promise(r=>setTimeout(r,100))
+  const gridRestored=await win.webContents.executeJavaScript(`document.querySelector('.frame-zoom-value').textContent`)
+  await win.webContents.reload(); await new Promise(r=>setTimeout(r,250))
+  const gridReloaded=await win.webContents.executeJavaScript(`document.querySelector('.frame-zoom-value').textContent`)
+  await win.webContents.executeJavaScript(`document.querySelector('.account-card.account-color-1').click()`); await new Promise(r=>setTimeout(r,100))
+  const singleRestored=await win.webContents.executeJavaScript(`document.querySelector('.zoom-reset').textContent`)
+  await win.webContents.executeJavaScript(`document.querySelector('.nav-item').click()`); await new Promise(r=>setTimeout(r,80))
+  const filter=await win.webContents.executeJavaScript(`(()=>{const inputs=document.querySelectorAll('.inventory-filters label input');const set=(el,v)=>{const setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;setter.call(el,v);el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}))};set(inputs[0],'20');set(inputs[1],'80');return true})()`); await new Promise(r=>setTimeout(r,100))
+  const filteredSpecies=await win.webContents.executeJavaScript(`[...document.querySelectorAll('.inventory-section tbody tr .inventory-identity strong')].map(x=>x.textContent)`)
+  await win.webContents.executeJavaScript(`document.querySelector('.advertise-button').click()`); await new Promise(r=>setTimeout(r,60)); await win.webContents.executeJavaScript(`[...document.querySelectorAll('.listing-modal-actions button')].at(-1).click()`); await new Promise(r=>setTimeout(r,100))
+  const stayedInventory=await win.webContents.executeJavaScript(`document.querySelector('.dashboard-view.active')?.querySelector('.inventory')!==null && !document.querySelector('.listing-modal')`)
+  await win.webContents.executeJavaScript(`document.querySelectorAll('.nav-item')[2].click()`); await new Promise(r=>setTimeout(r,100))
+  const showcase=await win.webContents.executeJavaScript(`({code:document.querySelector('.listing-local-code')?.textContent,review:!!document.querySelector('.price-review-prompt'),localPlayer:document.querySelector('.showcase-card-body small')?.textContent.includes('MotoMoto'),placeholder:document.querySelector('.showcase-search input')?.placeholder})`)
+  const code=showcase.code; await win.webContents.executeJavaScript(`(()=>{const e=document.querySelector('.showcase-search input'),s=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;s.call(e,${JSON.stringify('PC-OLDLIS')});e.dispatchEvent(new Event('input',{bubbles:true}))})()`); await new Promise(r=>setTimeout(r,80))
+  const codeSearch=await win.webContents.executeJavaScript(`document.querySelectorAll('.showcase-card').length`)
+  await win.webContents.executeJavaScript(`document.querySelector('.nav-item').click();document.querySelectorAll('.inventory-tabs button')[3].click()`); await new Promise(r=>setTimeout(r,100))
+  const bronzeVisible=await win.webContents.executeJavaScript(`document.body.textContent.includes('Bronze Boss Token')`)
+  const source=fs.readFileSync(path.join(__dirname,'..','src','renderer','src','ShowcasePanel.tsx'),'utf8'); const main=fs.readFileSync(path.join(__dirname,'..','src','main','index.ts'),'utf8')
+  const privacy=!source.includes('Jogador:')&&!source.includes('player: account')&&source.includes('listingCode: listingCode(listing)')
+  const parser=main.includes("'bossTokens'")&&main.includes('boss.*token')&&main.includes('tokens?')
+  const result={passed:gridCustom==='120%'&&/70%/.test(singleDefault)&&gridRestored==='120%'&&gridReloaded==='120%'&&/90%/.test(singleRestored)&&filteredSpecies.includes('Eevee')&&!filteredSpecies.includes('Charizard')&&!filteredSpecies.includes('Golem')&&stayedInventory&&showcase.review&&showcase.localPlayer&&showcase.placeholder.includes('código')&&codeSearch===1&&bronzeVisible&&privacy&&parser,gridCustom,singleDefault,gridRestored,gridReloaded,singleRestored,filteredSpecies,stayedInventory,showcase,codeSearch,bronzeVisible,privacy,parser}
+  fs.writeFileSync(path.join(__dirname,'quality-life-v134-result.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));win.destroy();app.exit(result.passed?0:1)
+}).catch(e=>{console.error(e);app.exit(1)})

@@ -1,0 +1,41 @@
+{
+  "initial": {
+    "active": "Ativos 1",
+    "filters": 7,
+    "actions": [
+      "Link WhatsApp",
+      "Link Discord",
+      "Copiar imagem",
+      "Editar",
+      "Marcar vendido",
+      "Remover"
+    ],
+    "power": "LV 585IV 140Q 1.526POWER 9.896",
+    "contactButton": "⚙ Dados de contato",
+    "viewport": 1484,
+    "pageWidth": 1484,
+    "filterRight": 1470,
+    "mainRight": 1484
+  },
+  "linkShare": {
+    "copied": true,
+    "hasLink": true,
+    "hasPlayer": true,
+    "hasAccountNumber": false
+  },
+  "imageShare": {
+    "hasImage": true,
+    "hasPower": true
+  },
+  "removed": {
+    "activeCount": "Ativos 0",
+    "removedCount": "Removidos 1",
+    "saved": "auto-removed"
+  },
+  "archive": {
+    "cards": 1,
+    "badge": "REMOVIDO",
+    "restoreDisabled": true
+  },
+  "restored": "active"
+}

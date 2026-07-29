@@ -1,0 +1,760 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/f3uhq6",
+    "id": "f3uhq6",
+    "slide": 4,
+    "layoutId": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#12100C",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Courier New"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l0nq1wze",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#8FC45A",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ydw761g3",
+      "id": "2",
+      "bbox": [
+        44,
+        40,
+        3,
+        640
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ze58zmh8",
+      "id": "3",
+      "bbox": [
+        68,
+        34,
+        470,
+        26
+      ],
+      "geometry": "rect",
+      "text": "INVENTÁRIO",
+      "textPreview": "INVENTÁRIO",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#8FC45A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "INVENTÁRIO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "INVENTÁRIO",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#8FC45A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "INVENTÁRIO",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#8FC45A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cbup4ryx",
+      "id": "4",
+      "bbox": [
+        1168,
+        34,
+        46,
+        26
+      ],
+      "geometry": "rect",
+      "text": "04",
+      "textPreview": "04",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "04"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "04",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "04",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#736450",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcnqxwzi",
+      "id": "5",
+      "bbox": [
+        68,
+        666,
+        1144,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q9c72hgr",
+      "id": "6",
+      "bbox": [
+        68,
+        680,
+        680,
+        18
+      ],
+      "geometry": "rect",
+      "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "textPreview": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+              "fontSize": 11,
+              "typeface": "Courier New",
+              "color": "#736450"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ral8vmhc",
+      "id": "7",
+      "bbox": [
+        68,
+        78,
+        1144,
+        60
+      ],
+      "geometry": "rect",
+      "text": "Um inventário único reduz procura e comparação manual.",
+      "textPreview": "Um inventário único reduz procura e comparação manual.",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 38,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Um inventário único reduz procura e comparação"
+          },
+          {
+            "index": 2,
+            "text": "manual."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Um inventário único reduz procura e comparação manual.",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Um inventário único reduz procura e comparação manual.",
+              "fontSize": 38,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47up07yl",
+      "id": "8",
+      "bbox": [
+        68,
+        142,
+        1100,
+        46
+      ],
+      "geometry": "rect",
+      "text": "Filtros por conta, nível, IV, raridade e shiny ajudam a encontrar o que importa.",
+      "textPreview": "Filtros por conta, nível, IV, raridade e shiny ajudam a encontrar o que importa.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Filtros por conta, nível, IV, raridade e shiny ajudam a encontrar o que importa."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Filtros por conta, nível, IV, raridade e shiny ajudam a encontrar o que importa.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Filtros por conta, nível, IV, raridade e shiny ajudam a encontrar o que importa.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p83qtcz6",
+      "id": "9",
+      "bbox": [
+        68,
+        194,
+        94,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#8FC45A",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5w7ax8ru",
+      "id": "10",
+      "bbox": [
+        60,
+        208,
+        1160,
+        370
+      ],
+      "geometry": "rect",
+      "fillColor": "#26201A",
+      "lineColor": "#8FC45A",
+      "lineWidth": 2
+    },
+    {
+      "order": 11,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/3yp03etk",
+      "id": "11",
+      "bbox": [
+        68,
+        216,
+        1144,
+        354
+      ],
+      "alt": "Inventário unificado do PokeCentral Desktop",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "5b0916b2-99a3-4be2-800b-633d4bd74d7d",
+        "contentType": "image/png",
+        "byteLength": 184960
+      }
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3upsvy9o",
+      "id": "12",
+      "bbox": [
+        68,
+        592,
+        248,
+        26
+      ],
+      "geometry": "rect",
+      "text": "TUDO",
+      "textPreview": "TUDO",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Courier New",
+        "color": "#F0B429",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "TUDO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "TUDO",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Courier New",
+            "color": "#F0B429",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "TUDO",
+              "fontSize": 16,
+              "typeface": "Courier New",
+              "color": "#F0B429",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/itgrmts3",
+      "id": "13",
+      "bbox": [
+        354,
+        592,
+        248,
+        26
+      ],
+      "geometry": "rect",
+      "text": "POKÉMON",
+      "textPreview": "POKÉMON",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "POKÉMON"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "POKÉMON",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "POKÉMON",
+              "fontSize": 16,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hs7atori",
+      "id": "14",
+      "bbox": [
+        640,
+        592,
+        248,
+        26
+      ],
+      "geometry": "rect",
+      "text": "POKÉBOLAS",
+      "textPreview": "POKÉBOLAS",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "POKÉBOLAS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "POKÉBOLAS",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "POKÉBOLAS",
+              "fontSize": 16,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gre9kjax",
+      "id": "15",
+      "bbox": [
+        926,
+        592,
+        248,
+        26
+      ],
+      "geometry": "rect",
+      "text": "ITENS",
+      "textPreview": "ITENS",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ITENS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ITENS",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ITENS",
+              "fontSize": 16,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

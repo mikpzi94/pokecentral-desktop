@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "grid": {
+    "quickRemoved": true,
+    "cards": 5,
+    "chips": [
+      {
+        "text": "U466",
+        "state": "ball-stock-chip ok",
+        "title": "Ultra Ball: 466 · agora · 25/07/2026, 13:54:01"
+      },
+      {
+        "text": "82",
+        "state": "ball-stock-chip low",
+        "title": "Idle Ball: 82 · agora · 25/07/2026, 13:54:01"
+      },
+      {
+        "text": "U0",
+        "state": "ball-stock-chip empty",
+        "title": "Ultra Ball: 0 · agora · 25/07/2026, 13:54:01"
+      },
+      {
+        "text": "12,6k",
+        "state": "ball-stock-chip ok",
+        "title": "Idle Ball: 12.550 · agora · 25/07/2026, 13:54:01"
+      },
+      {
+        "text": "U77",
+        "state": "ball-stock-chip low",
+        "title": "Ultra Ball: 77 · agora · 25/07/2026, 13:54:01"
+      },
+      {
+        "text": "34",
+        "state": "ball-stock-chip low",
+        "title": "Idle Ball: 34 · agora · 25/07/2026, 13:54:01"
+      },
+      {
+        "text": "—",
+        "state": "ball-stock-chip unknown",
+        "title": "Ultra Ball: não sincronizado · agora · 25/07/2026, 13:54:01"
+      },
+      {
+        "text": "I—",
+        "state": "ball-stock-chip unknown",
+        "title": "Idle Ball: não sincronizado · agora · 25/07/2026, 13:54:01"
+      }
+    ],
+    "headersFit": true,
+    "appOverflow": true
+  },
+  "narrow": {
+    "headersFit": true,
+    "appOverflow": true,
+    "chips": 8
+  },
+  "single": {
+    "single": true,
+    "selected": true,
+    "wideChips": 2
+  },
+  "shortcuts": {
+    "backInGrid": true,
+    "controls": [
+      {
+        "slot": 3,
+        "action": "reload"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1183 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/3px4u0",
+    "id": "3px4u0",
+    "slide": 2,
+    "layoutId": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#12100C",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Aptos",
+      "Courier New"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "afd486b1-09d9-4d93-8d75-9b912ecbd7b2",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "a7d18956-c252-4107-91ca-946bc77f80c2",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sbapsja1",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        8
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0B429",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra18ze9g",
+      "id": "2",
+      "bbox": [
+        44,
+        40,
+        3,
+        640
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q9s7q9sv",
+      "id": "3",
+      "bbox": [
+        68,
+        34,
+        470,
+        26
+      ],
+      "geometry": "rect",
+      "text": "VISÃO",
+      "textPreview": "VISÃO",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#F0B429",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "VISÃO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "VISÃO",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#F0B429",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "VISÃO",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#F0B429",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/58zqxora",
+      "id": "4",
+      "bbox": [
+        1168,
+        34,
+        46,
+        26
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 14,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 14,
+              "typeface": "Courier New",
+              "color": "#736450",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47qpojap",
+      "id": "5",
+      "bbox": [
+        68,
+        666,
+        1144,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3mh8ve94",
+      "id": "6",
+      "bbox": [
+        68,
+        680,
+        680,
+        18
+      ],
+      "geometry": "rect",
+      "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "textPreview": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 11,
+        "typeface": "Courier New",
+        "color": "#736450",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "typeface": "Courier New",
+            "color": "#736450",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO",
+              "fontSize": 11,
+              "typeface": "Courier New",
+              "color": "#736450"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/il87m9sj",
+      "id": "7",
+      "bbox": [
+        68,
+        78,
+        1144,
+        60
+      ],
+      "geometry": "rect",
+      "text": "Quatro contas não precisam virar quatro rotinas.",
+      "textPreview": "Quatro contas não precisam virar quatro rotinas.",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 38,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Quatro contas não precisam virar quatro rotinas."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Quatro contas não precisam virar quatro rotinas.",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Quatro contas não precisam virar quatro rotinas.",
+              "fontSize": 38,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hkzqt4ry",
+      "id": "8",
+      "bbox": [
+        68,
+        142,
+        1100,
+        46
+      ],
+      "geometry": "rect",
+      "text": "O aplicativo reúne o que hoje exige alternância, conferência e organização manual.",
+      "textPreview": "O aplicativo reúne o que hoje exige alternância, conferência e organização manual.",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "O aplicativo reúne o que hoje exige alternância, conferência e organização manual."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "O aplicativo reúne o que hoje exige alternância, conferência e organização manual.",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O aplicativo reúne o que hoje exige alternância, conferência e organização manual.",
+              "fontSize": 18,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gjqpkzat",
+      "id": "9",
+      "bbox": [
+        68,
+        194,
+        94,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#F0B429",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ql43qdgb",
+      "id": "10",
+      "bbox": [
+        68,
+        244,
+        500,
+        128
+      ],
+      "geometry": "rect",
+      "text": "O jogador continua jogando.\nO PokeCentral organiza ao redor.",
+      "textPreview": "O jogador continua jogando. | O PokeCentral organiza ao redor.",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Aptos",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "O jogador continua jogando."
+          },
+          {
+            "index": 2,
+            "text": "O PokeCentral organiza ao redor."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "O jogador continua jogando.",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O jogador continua jogando.",
+              "fontSize": 30,
+              "typeface": "Aptos",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "O PokeCentral organiza ao redor.",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Aptos",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "O PokeCentral organiza ao redor.",
+              "fontSize": 30,
+              "typeface": "Aptos",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bmdkzixg",
+      "id": "11",
+      "bbox": [
+        650,
+        232,
+        58,
+        34
+      ],
+      "geometry": "rect",
+      "text": "01",
+      "textPreview": "01",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Courier New",
+        "color": "#8FC45A",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "01",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Courier New",
+            "color": "#8FC45A",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "01",
+              "fontSize": 22,
+              "typeface": "Courier New",
+              "color": "#8FC45A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cnmlsny1",
+      "id": "12",
+      "bbox": [
+        726,
+        232,
+        430,
+        30
+      ],
+      "geometry": "rect",
+      "text": "SESSÕES",
+      "textPreview": "SESSÕES",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SESSÕES"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SESSÕES",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SESSÕES",
+              "fontSize": 18,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dov21sfm",
+      "id": "13",
+      "bbox": [
+        726,
+        270,
+        460,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Até quatro logins isolados, preservados ao trocar de tela.",
+      "textPreview": "Até quatro logins isolados, preservados ao trocar de tela.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Até quatro logins isolados, preservados ao trocar de tela."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Até quatro logins isolados, preservados ao trocar de tela.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Até quatro logins isolados, preservados ao trocar de tela.",
+              "fontSize": 17,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2xk3mdgz",
+      "id": "14",
+      "bbox": [
+        650,
+        334,
+        536,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ytkvyxk",
+      "id": "15",
+      "bbox": [
+        650,
+        358,
+        58,
+        34
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Courier New",
+        "color": "#4A90C2",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Courier New",
+            "color": "#4A90C2",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 22,
+              "typeface": "Courier New",
+              "color": "#4A90C2",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ozmlo3y5",
+      "id": "16",
+      "bbox": [
+        726,
+        358,
+        430,
+        30
+      ],
+      "geometry": "rect",
+      "text": "INVENTÁRIO",
+      "textPreview": "INVENTÁRIO",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "INVENTÁRIO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "INVENTÁRIO",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "INVENTÁRIO",
+              "fontSize": 18,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkv2x8fq",
+      "id": "17",
+      "bbox": [
+        726,
+        396,
+        460,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Pokémon, Pokébolas e itens consolidados em um único lugar.",
+      "textPreview": "Pokémon, Pokébolas e itens consolidados em um único lugar.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Pokémon, Pokébolas e itens consolidados em um único lugar."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Pokémon, Pokébolas e itens consolidados em um único lugar.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Pokémon, Pokébolas e itens consolidados em um único lugar.",
+              "fontSize": 17,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/etkjitg3",
+      "id": "18",
+      "bbox": [
+        650,
+        460,
+        536,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/futkryxo",
+      "id": "19",
+      "bbox": [
+        650,
+        484,
+        58,
+        34
+      ],
+      "geometry": "rect",
+      "text": "03",
+      "textPreview": "03",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Courier New",
+        "color": "#A878C4",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "03"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "03",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Courier New",
+            "color": "#A878C4",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "03",
+              "fontSize": 22,
+              "typeface": "Courier New",
+              "color": "#A878C4",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jyp0judg",
+      "id": "20",
+      "bbox": [
+        726,
+        484,
+        430,
+        30
+      ],
+      "geometry": "rect",
+      "text": "DECISÃO",
+      "textPreview": "DECISÃO",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Courier New",
+        "color": "#F2E8D5",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DECISÃO"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DECISÃO",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Courier New",
+            "color": "#F2E8D5",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DECISÃO",
+              "fontSize": 18,
+              "typeface": "Courier New",
+              "color": "#F2E8D5",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ixgzqpwv",
+      "id": "21",
+      "bbox": [
+        726,
+        522,
+        460,
+        54
+      ],
+      "geometry": "rect",
+      "text": "Análise, preço sugerido e compartilhamento somente quando solicitado.",
+      "textPreview": "Análise, preço sugerido e compartilhamento somente quando solicitado.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "Aptos",
+        "color": "#A89880",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Análise, preço sugerido e compartilhamento somente quando"
+          },
+          {
+            "index": 2,
+            "text": "solicitado."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Análise, preço sugerido e compartilhamento somente quando solicitado.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Aptos",
+            "color": "#A89880",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Análise, preço sugerido e compartilhamento somente quando solicitado.",
+              "fontSize": 17,
+              "typeface": "Aptos",
+              "color": "#A89880"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/50ril4v6",
+      "id": "22",
+      "bbox": [
+        650,
+        586,
+        536,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#4A3C28",
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

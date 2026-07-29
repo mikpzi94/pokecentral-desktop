@@ -1,0 +1,10 @@
+const fs = require('node:fs')
+const path = require('node:path')
+const fixWebmDuration = require('../.tmp-video-tools/node_modules/fix-webm-duration')
+const input = path.join(__dirname, '..', 'docs', 'AUTORIZACAO_STAFF_0.12.2', 'VIDEO_DEMONSTRACAO_POKECENTRAL_0.12.2.webm')
+const output = path.join(__dirname, '..', 'docs', 'AUTORIZACAO_STAFF_0.12.2', 'VIDEO_DEMONSTRACAO_POKECENTRAL_0.12.2.fixed.webm')
+;(async()=>{
+  const blob = new Blob([fs.readFileSync(input)], { type: 'video/webm' })
+  const fixed = await fixWebmDuration(blob, 165000, { logger: false })
+  fs.writeFileSync(output, Buffer.from(await fixed.arrayBuffer()))
+})().catch(error=>{console.error(error);process.exit(1)})

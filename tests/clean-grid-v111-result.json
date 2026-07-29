@@ -1,0 +1,12 @@
+{
+  "grid": {
+    "toolbar": false,
+    "labels": 2,
+    "frames": 2
+  },
+  "single": {
+    "toolbar": true,
+    "back": true,
+    "title": "Conta 1 · MotoMoto"
+  }
+}

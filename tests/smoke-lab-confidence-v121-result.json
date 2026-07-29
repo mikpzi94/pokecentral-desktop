@@ -1,0 +1,17 @@
+{
+  "preliminary": {
+    "text": "Estimativa preliminar",
+    "className": "lab-confidence confidence-preliminary",
+    "detail": "69/100 · Abaixo do nível 15, os stats ainda variam demais para uma validação precisa."
+  },
+  "high": {
+    "text": "Alta confiança",
+    "className": "lab-confidence confidence-high",
+    "detail": "64/100 · Nível 15 ou superior, IV, Quality e os seis stats disponíveis."
+  },
+  "insufficient": {
+    "text": "Dados insuficientes",
+    "className": "lab-confidence confidence-insufficient",
+    "detail": "71/100 · Abra os detalhes do Pokémon para receber nível, IV, Quality e os seis stats."
+  }
+}

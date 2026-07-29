@@ -1,0 +1,25 @@
+POKECENTRAL DESKTOP — MANIFESTO DA VERSÃO PARA AVALIAÇÃO
+
+Versão: 0.12.2
+Plataforma: Windows x64
+Instalador: PokeCentral Desktop Setup 0.12.2.exe
+Tamanho: 112155767 bytes (106,96 MB)
+SHA-256: D7AD23C7425007931793210CD5B03D85EA585EE4FC99D48193E18096B2AF4B5F
+Gerado em: 24/07/2026
+Distribuição pretendida nesta fase: gratuita
+Assinatura digital comercial: ainda não disponível
+Contato de suporte e segurança: pokecentralrmt@gmail.com
+
+Local no projeto:
+release/PokeCentral Desktop Setup 0.12.2.exe
+
+Verificação no PowerShell:
+Get-FileHash -Algorithm SHA256 "PokeCentral Desktop Setup 0.12.2.exe"
+Vídeo demonstrativo:
+- Arquivo: VIDEO_DEMONSTRACAO_POKECENTRAL_0.12.2.mp4
+- Duração: 2min46s
+- Resolução: 1280x720
+- Codec: H.264 / MP4
+- Tamanho: 2075767 bytes (1,98 MB)
+- SHA-256: 8D33A7EE749C7E141C61D673FC90AF178117FACA9D7354549A64CCE261F276B3
+- Conteúdo: dados fictícios, sem credenciais ou contatos reais

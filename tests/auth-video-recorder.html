@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Gerador de vídeo</title><style>html,body{margin:0;background:#080a08;overflow:hidden}canvas{display:block}</style></head><body><canvas id="video" width="1280" height="720"></canvas><script>
+const { ipcRenderer } = require('electron')
+const fs = require('node:fs')
+const canvas = document.getElementById('video')
+const ctx = canvas.getContext('2d')
+
+const palette = { bg:'#0b0c09', panel:'#17160f', gold:'#f0b429', cream:'#f6ecd1', muted:'#b8a98d', green:'#8fc45a', blue:'#58a6d9', red:'#d4593f' }
+const loadImage = (src) => new Promise((resolve,reject) => { const image=new Image(); image.onload=()=>resolve(image); image.onerror=reject; image.src=src })
+function roundedRect(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();ctx.stroke()}
+function wrap(text,x,y,maxWidth,lineHeight,maxLines=4){const words=text.split(' ');let line='';let lines=[];for(const word of words){const test=line?line+' '+word:word;if(ctx.measureText(test).width>maxWidth&&line){lines.push(line);line=word}else line=test}if(line)lines.push(line);lines=lines.slice(0,maxLines);lines.forEach((value,index)=>ctx.fillText(value,x,y+index*lineHeight));return lines.length}
+function header(title,subtitle){ctx.fillStyle='rgba(11,12,9,.94)';ctx.fillRect(0,0,1280,82);ctx.fillStyle=palette.gold;ctx.font='700 14px monospace';ctx.fillText('POKECENTRAL DESKTOP  •  VERSÃO 0.12.2',36,30);ctx.fillStyle=palette.cream;ctx.font='700 25px monospace';ctx.fillText(title,36,62);ctx.fillStyle=palette.muted;ctx.font='14px monospace';ctx.textAlign='right';ctx.fillText(subtitle,1244,47);ctx.textAlign='left'}
+function footer(caption,elapsed,total){ctx.fillStyle='rgba(11,12,9,.95)';ctx.fillRect(0,578,1280,142);ctx.fillStyle=palette.gold;ctx.fillRect(0,578,8,142);ctx.fillStyle=palette.cream;ctx.font='700 22px monospace';wrap(caption,34,616,1195,29,3);ctx.fillStyle='#2c2a20';ctx.fillRect(34,690,1210,6);ctx.fillStyle=palette.green;ctx.fillRect(34,690,1210*Math.min(1,elapsed/total),6)}
+function drawCover(image,progress){const area={x:0,y:82,w:1280,h:496};const base=Math.max(area.w/image.width,area.h/image.height);const zoom=base*(1+progress*.018);const w=image.width*zoom,h=image.height*zoom;const x=area.x+(area.w-w)/2-(progress-.5)*8;const y=area.y+(area.h-h)/2;ctx.drawImage(image,x,y,w,h)}
+function titleScene(title,lines,color=palette.gold){ctx.fillStyle=palette.bg;ctx.fillRect(0,0,1280,720);ctx.fillStyle=color;ctx.fillRect(70,98,9,450);ctx.fillStyle=palette.gold;ctx.font='700 15px monospace';ctx.fillText('SOLICITAÇÃO DE AVALIAÇÃO DA STAFF',105,130);ctx.fillStyle=palette.cream;ctx.font='700 48px monospace';wrap(title,105,214,1050,62,3);ctx.fillStyle=palette.muted;ctx.font='20px monospace';lines.forEach((line,index)=>ctx.fillText(line,108,420+index*35));ctx.strokeStyle='#6f5826';ctx.strokeRect(70,98,1140,450)}
+function securityScene(){ctx.fillStyle=palette.bg;ctx.fillRect(0,0,1280,720);header('Segurança e transparência','AVALIAÇÃO PRIVADA');const items=[['SEM AUTOMAÇÃO','Não movimenta, caça, batalha, captura ou vende pelo jogador.'],['LOGIN NA PÁGINA OFICIAL','A senha é digitada no jogo e não é recebida pelo painel.'],['DADOS LOCAIS','Inventário, contas e vitrine permanecem no computador.'],['AUDITORIA DISPONÍVEL','A staff pode solicitar acesso privado ao código.']];items.forEach((item,index)=>{const x=55+(index%2)*610,y=125+Math.floor(index/2)*205;ctx.fillStyle=palette.panel;ctx.strokeStyle=index%2?palette.blue:palette.green;ctx.lineWidth=2;roundedRect(x,y,560,165,8);ctx.fillStyle=index%2?palette.blue:palette.green;ctx.font='700 17px monospace';ctx.fillText(item[0],x+25,y+42);ctx.fillStyle=palette.cream;ctx.font='18px monospace';wrap(item[1],x+25,y+82,510,28,3)});ctx.fillStyle=palette.muted;ctx.font='16px monospace';ctx.fillText('Contato: pokecentralrmt@gmail.com',55,650)}
+
+ipcRenderer.once('video:config', async (_event, config) => {
+  try {
+    const images={}; for(const [key,value] of Object.entries(config.images)) images[key]=await loadImage(value)
+    const scenes=[
+      {duration:10000,type:'title',title:'PokeCentral Desktop',lines:['Ferramenta gratuita e independente para Windows.','Vídeo preparado para avaliação — não é anúncio público.']},
+      {duration:30000,type:'image',image:images.launcher,title:'Launcher com até quatro contas',subtitle:'SESSÕES ISOLADAS',caption:'Grade 2x2 ou conta individual. Cada login permanece em uma partição local separada. O aplicativo não clica nem joga pelo usuário.'},
+      {duration:30000,type:'image',image:images.inventory,title:'Inventário consolidado',subtitle:'ORGANIZAÇÃO LOCAL',caption:'Pokémon, Pokébolas e itens das próprias sessões em um único lugar, com filtros por conta, nível, IV, raridade e shiny.'},
+      {duration:35000,type:'image',image:images.lab,title:'Laboratório',subtitle:'ANÁLISE INDEPENDENTE',caption:'Exibe IV, Quality, stats e Power. A confiança é informada separadamente: abaixo do nível 15 a estimativa é preliminar; dados completos no nível 15+ recebem alta confiança.'},
+      {duration:35000,type:'image',image:images.showcase,title:'Vitrine local',subtitle:'AÇÃO EXPLÍCITA',caption:'O anúncio fica local. Imagem ou link de contato só são gerados quando o jogador solicita. Não há publicação, venda ou pagamento automático.'},
+      {duration:15000,type:'security'},
+      {duration:10000,type:'title',title:'Pedido de autorização',lines:['A staff pode aprovar o núcleo e definir condições para a Vitrine.','Monetização futura do site será avaliada separadamente.'],color:palette.green}
+    ].map(scene=>({...scene,duration:scene.duration*config.scale}))
+    const total=scenes.reduce((sum,scene)=>sum+scene.duration,0)
+    const stream=canvas.captureStream(30)
+    const mime=MediaRecorder.isTypeSupported('video/webm;codecs=vp9')?'video/webm;codecs=vp9':'video/webm;codecs=vp8'
+    const recorder=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:900000})
+    const chunks=[];recorder.ondataavailable=(event)=>{if(event.data.size)chunks.push(event.data)}
+    recorder.onstop=async()=>{const blob=new Blob(chunks,{type:mime});fs.writeFileSync(config.output,Buffer.from(await blob.arrayBuffer()));ipcRenderer.send('video:done',{ok:true,bytes:blob.size,mime})}
+    recorder.start(1000)
+    const started=performance.now()
+    function frame(now){const elapsed=Math.min(total,now-started);let cursor=0,scene=scenes[0],local=0;for(const candidate of scenes){if(elapsed<=cursor+candidate.duration){scene=candidate;local=elapsed-cursor;break}cursor+=candidate.duration}const progress=scene.duration?Math.min(1,local/scene.duration):0;ctx.clearRect(0,0,1280,720);if(scene.type==='title')titleScene(scene.title,scene.lines,scene.color);else if(scene.type==='security')securityScene();else{drawCover(scene.image,progress);header(scene.title,scene.subtitle);footer(scene.caption,elapsed,total)}if(elapsed<total)requestAnimationFrame(frame);else setTimeout(()=>recorder.stop(),250)}
+    requestAnimationFrame(frame)
+  } catch(error){ipcRenderer.send('video:done',{ok:false,error:String(error&&error.stack||error)})}
+})
+</script></body></html>

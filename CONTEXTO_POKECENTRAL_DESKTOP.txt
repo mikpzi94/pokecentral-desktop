@@ -1,0 +1,1045 @@
+POKECENTRAL DESKTOP — CONTEXTO E ESTADO ATUAL
+Atualizado em: 25/07/2026
+Versão atual do aplicativo: 0.13.4 (teste interno)
+
+Este documento é a fonte de contexto para continuar o desenvolvimento do
+PokeCentral Desktop sem depender do histórico completo das conversas.
+Ele substitui o plano inicial e registra o que já existe, as decisões tomadas,
+os limites do produto e as pendências reais.
+
+======================================================================
+1. VISÃO DO PRODUTO
+======================================================================
+
+O PokeCentral Desktop é um launcher e organizador local complementar ao site
+PokeCentral para jogadores de Poke Idle World.
+
+Objetivos principais:
+
+- Abrir e manter até quatro contas do jogo em sessões isoladas.
+- Exibir todas as contas em grade 2x2 ou uma conta ampliada.
+- Preservar cada login ao alternar entre Launcher, Inventário, Laboratório e
+  Vitrine.
+- Consolidar Pokémon, Pokébolas e itens das contas em um inventário único.
+- Ajudar o jogador a analisar Pokémon e organizar o que deseja vender.
+- Criar anúncios locais com sugestão de preço.
+- Gerar imagens e links compartilháveis somente quando o usuário pedir.
+- Reduzir a necessidade de alternar contas, preencher dados e tirar prints.
+
+O aplicativo não é bot e não deve jogar pelo usuário. Não deve clicar,
+atacar, caçar, capturar, vender, usar macros ou tomar decisões no jogo.
+
+======================================================================
+2. DECISÕES DE PRODUTO JÁ CONFIRMADAS
+======================================================================
+
+- Plataforma inicial: Windows.
+- Tecnologia: Electron + React + TypeScript + electron-vite.
+- Distribuição: instalador NSIS, não executável portátil.
+- Limite: até quatro contas por instalação.
+- Login do jogo: feito manualmente pelo jogador dentro de cada sessão.
+- Senhas e cookies do jogo não são copiados nem enviados pelo PokeCentral.
+- Interface: identidade visual inspirada no site, com fundo escuro, dourado,
+  verde, azul e cores diferentes para cada conta.
+- A grade 2x2 é o modo padrão do launcher.
+- Cada conta pode ser aberta individualmente em tela ampliada.
+- O menu lateral pode ficar expandido ou recolhido mostrando apenas ícones.
+- Importação manual e captura de tela não aparecem no fluxo principal atual.
+  O código de contingência pode permanecer disponível para uma fase futura.
+- Tudo da Vitrine permanece local até uma ação explícita de compartilhamento.
+- Publicar no marketplace do site é uma fase futura e separada.
+- O aplicativo e todas as funções locais permanecerão gratuitos.
+- A monetização futura será concentrada no site e deverá cobrar por escala,
+  exposição e conveniência, nunca por vantagem dentro do jogo.
+- A publicação pública no site deverá possuir uma cota gratuita para permitir
+  experimentação e ajudar o marketplace a crescer.
+- Nenhuma monetização será ativada antes da autorização, do beta gratuito e da
+  formação de uma base inicial de usuários.
+
+======================================================================
+3. ESTADO ATUAL — VERSÃO 0.13.4 (TESTE INTERNO)
+======================================================================
+
+A versão 0.13.4 está implementada, compilada e testada para uso interno. Ela aumenta a leitura das Pokébolas, preserva zoom separado por conta na grade e no modo ampliado, adiciona nível máximo, amplia a coleta para tokens de boss e melhora o fluxo e a privacidade da Vitrine.
+
+Instalador:
+
+release/PokeCentral Desktop Setup 0.13.4.exe
+
+Tamanho aproximado: 106.96 MB (112160820 bytes)
+SHA-256:
+4EA10745619BDAC68825E06D041CD461075756F5FC3DB4C503B63AF84929346F
+
+Build de avaliação da staff:
+
+- A solicitação, o vídeo e o relatório do VirusTotal continuam vinculados à versão 0.12.2.
+- O instalador 0.13.4 é somente para teste interno enquanto o ticket está em análise.
+- Não enviar a 0.13.4 à staff como se fosse o mesmo arquivo analisado no VirusTotal; o hash é diferente e exigirá novo envio quando a versão pública for congelada.
+
+Funcionalidades concluídas:
+
+- Até quatro sessões persistentes e isoladas do jogo.
+- Grade 2x2 sem barras de rolagem internas visíveis.
+- Conta individual ampliada.
+- Cada janela da grade possui recarregamento individual e botão Expandir.
+- Modo individual abre em 70% e a grade volta automaticamente para 100%.
+- Todas as janelas possuem controles próprios de zoom −, percentual/padrão e +.
+- O inventário possui faixas mínima e máxima para IV e Quality.
+- Oito colunas de Pokémon podem ser ordenadas ao clicar no título; setas mostram direção.
+- O menu recolhido usa 72 px e reduz o padding principal para ampliar as janelas.
+- Cada conta mantém o login local persistentemente; a opção SIM/NÃO foi removida para simplificar o uso.
+- O launcher nunca lê nem armazena usuário ou senha; a persistência usa apenas o perfil isolado do navegador.
+- O launcher usa margens de 8–10 px e 4 px entre as telas para ampliar a área útil.
+- Os cabeçalhos das contas têm 32 px, nome do personagem mais legível e status junto ao nome.
+- Zoom aparece como grupo único; Recarregar é ação neutra e Ampliar usa a cor da conta.
+- O botão de recolher o menu possui área clicável maior e contraste mais claro.
+- O cartão inteiro de cada conta amplia a sessão; não existe mais inventário rápido duplicado no menu.
+- Ultra Ball e Idle Ball aparecem em todos os cabeçalhos, com número compacto e quantidade exata no tooltip.
+- Estoque normal usa verde, abaixo de 100 usa amarelo, zero usa vermelho e não sincronizado usa traço cinza.
+- O tooltip informa a última sincronização; ausência de leitura nunca é apresentada como zero.
+- Os cabeçalhos foram validados sem corte em 1366×850 e 1024×768.
+- Atalhos: Ctrl+1 a Ctrl+4 ampliam contas, Ctrl+0 ou Esc voltam à grade e Ctrl+R recarrega a conta em foco.
+- Os números de Ultra Ball e Idle Ball foram ampliados e continuam responsivos em 1024×768.
+- Cada conta guarda dois zooms independentes: grade e ampliado. Na primeira vez usa 100% e 70%; depois restaura a escolha do usuário.
+- O inventário possui nível mínimo e máximo.
+- O leitor aceita endpoints e recipientes de boss, tokens, rewards e currencies; Bronze Boss Token passa a ser reconhecido mesmo sem catálogo local.
+- Criar anúncio fecha apenas o modal e mantém o usuário no Inventário para adicionar outros Pokémon.
+- A interface local continua mostrando conta e personagem, mas imagem, texto e payload público usam um código estável PC-XXXXXX.
+- O código aparece na Vitrine e pode ser pesquisado para localizar a conta sem expor o personagem publicamente.
+- Após cinco dias sem mudança de preço, a Vitrine pode oferecer uma referência de venda rápida. O usuário escolhe aplicar ou manter; nada muda automaticamente.
+- Manter preço adia a próxima sugestão por mais cinco dias.
+- A rota pública do site foi ajustada e testada localmente para usar o código sem personagem, mas ainda não foi enviada ao GitHub/produção por exigir autorização explícita.
+- Sessões continuam abertas ao trocar de seção.
+- Nome do personagem associado à conta quando identificado.
+- Menu lateral recolhível.
+- Inventário sincronizado e unificado.
+- Imagens padronizadas de Pokémon e itens.
+- Laboratório com estados Dados insuficientes, Estimativa preliminar e Alta confiança.
+- Documentação pública de segurança, permissões e solicitação formal de autorização.
+- Laboratório para análise de Pokémon.
+- Vitrine local com anúncios, preço e compartilhamento.
+- Card compartilhável com métricas destacadas, barras de stats e confiança por nível.
+- Remoção automática recuperável de anúncios.
+- Cards detalhados copiados em PNG para a área de transferência.
+- Preparação de links temporários para WhatsApp e Discord.
+
+======================================================================
+4. ARQUITETURA ATUAL
+======================================================================
+
+Estrutura principal:
+
+src/main/index.ts
+- Inicializa o Electron.
+- Cria e controla os WebContentsView das contas.
+- Mantém partições persistentes separadas.
+- Observa respostas permitidas da própria sessão para formar snapshots.
+- Valida IPC.
+- Controla clipboard, abertura segura de links e salvamento de PNG.
+
+src/main/collection-policy.ts
+- Registra as regras e disponibilidade da coleta assistida.
+
+src/preload/index.ts
+- Expõe uma API pequena e explícita ao renderer.
+- Não expõe Node.js, sistema de arquivos ou shell arbitrário.
+
+src/shared/types.ts
+- Tipos compartilhados de contas, Pokémon, itens, snapshots, anúncios,
+  contatos e API do desktop.
+
+src/renderer/src/App.tsx
+- Estado central da interface.
+- Persistência local.
+- Aplicação dos snapshots.
+- Inventário e seus filtros.
+- Reconciliação dos anúncios com o inventário atual.
+
+src/renderer/src/LauncherPanel.tsx
+- Grade 2x2.
+- Visualização individual.
+- Posicionamento e redimensionamento das telas do jogo.
+- Controles de voltar à grade, zoom, recarregar e sincronizar.
+
+src/renderer/src/LabPanel.tsx
+- Seleção de conta e Pokémon.
+- Raridade, potencial, IV, Quality, Power e stats.
+
+src/renderer/src/ShowcasePanel.tsx
+- Criação e gestão da Vitrine local.
+- Filtros.
+- Contatos.
+- Geração de cards, imagens e links.
+
+src/renderer/src/lib/pokemon-analysis.ts
+- Faixas de raridade por Quality.
+- Cálculo de Power disponível.
+- Classificação local de potencial.
+
+src/renderer/src/lib/pricing.ts
+- Sugestão de venda rápida, preço recomendado e preço flexível.
+- Lógica adaptada da calculadora existente do site.
+
+src/renderer/src/data/game-catalog.json
+- Catálogo local de espécies e itens usado na normalização.
+
+src/renderer/src/data/pricing-species.json
+- Dados locais das espécies usados pela calculadora de preço.
+
+======================================================================
+5. MODELO DAS CONTAS E DO LAUNCHER
+======================================================================
+
+Cada conta possui:
+
+- ID local.
+- Slot de 1 a 4.
+- Nome Conta 1, Conta 2, Conta 3 ou Conta 4.
+- Nome do personagem quando identificado.
+- Estado de conexão.
+- Data da última sincronização.
+- Cor visual própria.
+- Partição persistente própria no Electron.
+
+Partições:
+
+- persist:pokecentral-conta-1
+- persist:pokecentral-conta-2
+- persist:pokecentral-conta-3
+- persist:pokecentral-conta-4
+
+Comportamento esperado e já implementado:
+
+- “Todas as contas” abre a grade.
+- Clicar em uma conta abre aquela sessão ampliada.
+- Trocar para Inventário, Laboratório ou Vitrine apenas oculta as telas do
+  jogo; não encerra as sessões.
+- Ao voltar, o estado da sessão permanece.
+- A grade não usa uma barra global redundante.
+- Cada quadro mostra a conta e o personagem.
+- Controles individuais não devem provocar cliques dentro do jogo.
+
+======================================================================
+6. COLETA E SINCRONIZAÇÃO DO INVENTÁRIO
+======================================================================
+
+A coleta atual é somente de leitura e acontece dentro da sessão do próprio
+jogador. O processo principal observa respostas relevantes que a página já
+recebe e normaliza dados reconhecidos.
+
+Dados de Pokémon disponíveis quando entregues pelo jogo:
+
+- Identificador do registro.
+- Espécie e ID da espécie.
+- Nível.
+- Quality.
+- IV total como número inteiro, não porcentagem.
+- Shiny.
+- Power.
+- HP, Attack, Defense, Special Attack, Special Defense e Speed.
+
+Dados de inventário:
+
+- Pokébolas.
+- Itens.
+- Quantidade.
+- Categoria.
+- Imagem/ícone quando identificado.
+- Valor NPC quando disponível.
+
+Regras importantes:
+
+- O app não faz requisições para jogar.
+- O app não automatiza ações.
+- A atualização do inventário usa dados da própria sessão.
+- Um snapshot só substitui Pokémon de uma conta quando pokemonUpdated=true.
+- Itens só são substituídos quando itemsUpdated=true.
+- Uma leitura parcial ou sem confirmação não deve apagar inventário.
+- Inventário completo não é enviado a servidores por padrão.
+
+Os arquivos iv-helper foram usados apenas como referência para entender
+formatos e estruturas possíveis. A extensão não é instalada nem executada
+como automação do jogo.
+
+======================================================================
+7. INVENTÁRIO UNIFICADO
+======================================================================
+
+Abas atuais:
+
+- Tudo.
+- Pokémon.
+- Pokébolas.
+- Itens.
+
+Filtros de Pokémon:
+
+- Conta.
+- Busca por nome.
+- Nível mínimo.
+- IV mínimo.
+- Raridade, com múltipla seleção.
+- Somente shiny.
+- Ordenação por nome, nível, IV, Quality ou Power.
+
+Tabela de Pokémon:
+
+- Conta.
+- Imagem e espécie.
+- Nível.
+- IV total.
+- Quality.
+- Raridade.
+- Potencial.
+- Power atual.
+- Ação “Anunciar” ou “Na vitrine”.
+
+Faixas de raridade atuais baseadas em Quality:
+
+- Fraco.
+- Comum.
+- Incomum.
+- Raro.
+- Épico.
+- Lendário.
+- Mítico.
+- Ancestral.
+- Divino.
+
+Raridade e Quality representam a mesma classificação em dois formatos. Por
+isso não há um segundo filtro de “qualidade textual” separado da raridade.
+
+======================================================================
+8. LABORATÓRIO E ANÁLISE
+======================================================================
+
+O Laboratório permite:
+
+- Selecionar uma conta.
+- Selecionar um Pokémon daquela conta.
+- Visualizar imagem, tipo, nível, IV, Quality e raridade.
+- Visualizar os seis stats.
+- Visualizar Power atual.
+- Receber uma classificação de potencial local.
+
+A classificação de potencial é uma triagem e não deve ser apresentada como
+uma medição oficial do jogo.
+
+Pontos conhecidos:
+
+- Quality e IV ajudam a avaliar a genética do exemplar.
+- Stats e Power mostram a força atual recebida do jogo.
+- Pokémon de nível muito baixo, especialmente nível 1, não permitem inferir
+  IVs individuais com a mesma confiança de Pokémon de nível mais alto.
+- A ferramenta PIW Tools foi usada como referência de comparação, sem copiar
+  integralmente seu layout ou código.
+- O exemplo do Golem LV 585, Quality 1.526, IV 140 e stats completos confirmou
+  coerência dos dados lidos.
+- A confiança da análise agora possui três estados:
+  - Dados insuficientes: falta nível, IV, Quality ou algum dos seis stats.
+  - Estimativa preliminar: todos os dados existem, mas o Pokémon está abaixo do nível 15.
+  - Alta confiança: nível 15 ou superior com IV, Quality e os seis stats.
+- O limite de nível 15 foi adotado como referência conservadora após observar a comunicação do JustPokédex autorizado no Discord. Ele não deve ser chamado de regra oficial sem confirmação da administração.
+- Nenhum código do JustPokédex foi copiado; o projeto foi usado apenas como precedente e referência comportamental.
+
+======================================================================
+9. PREÇO
+======================================================================
+
+Ao criar ou editar um anúncio, o app mostra:
+
+- Venda rápida.
+- Preço recomendado.
+- Preço flexível.
+
+A estimativa considera os dados disponíveis, como:
+
+- Espécie.
+- IV.
+- Quality.
+- Nível.
+- Shiny.
+- Configurações da espécie presentes no catálogo de preço.
+
+Princípios:
+
+- O preço é apenas sugestão.
+- O usuário sempre pode informar outro valor.
+- O usuário escolhe se aceita propostas.
+- A calculadora não deve tratar preço anunciado como venda confirmada.
+- A lógica do desktop deve continuar alinhada à calculadora do site.
+
+======================================================================
+10. VITRINE LOCAL — VERSÃO 0.12.1
+======================================================================
+
+A Vitrine é local. Criar um anúncio não publica no site nem no marketplace.
+
+Cada anúncio armazena:
+
+- ID local.
+- ID do Pokémon.
+- Conta de origem.
+- Snapshot do Pokémon.
+- Preço.
+- Aceita negociar ou preço fixo.
+- Estado.
+- Datas de criação, atualização e remoção.
+
+Estados atuais:
+
+- active: aparece em Ativos.
+- auto-removed: foi removido ou deixou de existir na conta.
+- sold: marcado manualmente como vendido.
+
+Abas:
+
+- Ativos.
+- Removidos.
+
+Filtros da Vitrine:
+
+- Busca por nome.
+- Conta.
+- IV mínimo e máximo.
+- Quality mínima e máxima.
+- Somente shiny.
+- Ordenação por recentes, IV, Quality ou preço.
+
+Ações dos anúncios ativos:
+
+- Gerar link para WhatsApp.
+- Gerar link para Discord.
+- Copiar imagem.
+
+- Editar.
+- Marcar vendido.
+- Remover.
+
+Ações no histórico:
+
+- Restaurar, se o Pokémon ainda estiver na conta.
+- Apagar definitivamente o registro local.
+
+======================================================================
+11. REMOÇÃO E RESTAURAÇÃO AUTOMÁTICA
+======================================================================
+
+Regra implementada:
+
+1. O jogo entrega um snapshot confirmado com pokemonUpdated=true.
+2. O app monta os IDs atuais daquela conta.
+3. Um anúncio ativo cujo ID não esteja mais presente vai para auto-removed.
+4. Ele desaparece imediatamente da aba Ativos.
+5. O histórico permanece em Removidos.
+6. Se o mesmo ID reaparecer em um snapshot futuro, o anúncio volta para
+   active e recebe os dados atualizados do Pokémon.
+
+Proteções:
+
+- Não há exclusão permanente automática.
+- Um snapshot sem atualização completa não remove anúncio.
+- Vendidos não são restaurados automaticamente.
+- Restaurar manualmente é bloqueado quando o Pokémon não está na conta.
+- A identificação depende do ID estável entregue pelo jogo.
+
+======================================================================
+12. CONTATOS E COMPARTILHAMENTO
+======================================================================
+
+Dados configuráveis:
+
+- WhatsApp com código do país e DDD.
+- Usuário do Discord.
+- ID numérico do Discord.
+- Contato preferido.
+
+Por que pedir ID do Discord:
+
+- O nome de usuário sozinho não forma um link confiável para um perfil.
+- O ID numérico permite abrir https://discord.com/users/ID.
+
+Persistência:
+
+- Os dados ficam no localStorage do aplicativo.
+- Eles não são enviados ao criar um anúncio.
+- Eles só entram no material quando o usuário gera um link.
+
+O texto compartilhado usa apenas o nome do personagem. Não inclui Conta 1,
+Conta 2, Conta 3 ou Conta 4.
+
+Imagem detalhada:
+
+- Formato PNG 1200x630.
+- Imagem do Pokémon.
+- Nome do personagem.
+- Nível.
+- IV.
+- Quality.
+- Raridade.
+- Potencial.
+- HP, Attack, Defense, Special Attack, Special Defense e Speed.
+- Power.
+- Preço.
+- Aceita propostas ou preço fixo.
+
+Ações:
+
+- “Copiar imagem” coloca imagem e texto na área de transferência. A opção de salvar arquivo foi removida por não ser necessária no fluxo principal.
+
+- O renderer não recebe acesso arbitrário ao sistema de arquivos.
+
+======================================================================
+13. LINKS PÚBLICOS TEMPORÁRIOS
+======================================================================
+
+Solução escolhida:
+
+- Não criar registro no marketplace.
+- Não usar banco de dados para os cards locais.
+- Colocar uma cópia limitada e codificada dos dados no próprio link.
+- O servidor apenas decodifica, gera as tags Open Graph e redireciona.
+- Validade do link: 30 dias.
+- Página marcada noindex e nofollow.
+
+Base usada pelo desktop:
+
+https://pokecentral-rmt.vercel.app/s/<dados-codificados>
+
+O preview contém:
+
+- Imagem oficial do Pokémon.
+- Espécie.
+- IV.
+- Preço.
+- Raridade.
+- Quality.
+- Power.
+- Nome do jogador.
+- Informação de negociação.
+
+Ao clicar:
+
+- Link WhatsApp abre wa.me com mensagem preenchida.
+- Link Discord abre o perfil pelo ID numérico.
+
+Segurança da rota:
+
+- Limite de tamanho do payload.
+- Validação de base64url.
+- Escape de HTML.
+- Sanitização de texto e contato.
+- Destinos construídos pelo servidor, não aceitos livremente do payload.
+- Link expirado não redireciona ao contato.
+- Nenhum service_role ou segredo é usado.
+
+======================================================================
+14. PUBLICAÇÃO DOS LINKS
+======================================================================
+
+A rota foi criada no projeto irmão:
+
+../pokecentralRMT/api/share.js
+
+E foi adicionada ao:
+
+../pokecentralRMT/vercel.json
+
+Commit local do site:
+
+220098a feat: add temporary desktop showcase links
+
+Situação em 24/07/2026:
+
+- A rota foi publicada no GitHub e implantada pela Vercel.
+- origin/main está no commit 4869160, contendo a rota 220098a e o commit posterior de ícones já existente.
+- A resposta pública foi testada com status 200.
+- O HTML contém Open Graph, dados do Pokémon e nome do jogador.
+- O redirecionamento para o WhatsApp configurado foi confirmado.
+- O repositório remoto é https://github.com/mikpzi94/pokecentralRMT.git.
+
+Comportamento confirmado:
+
+- Criar um link não publica o Pokémon no marketplace nem grava anúncio no banco.
+- O vendedor cola o link em WhatsApp, Discord ou outro grupo.
+- A prévia mostra o Pokémon e as informações do anúncio.
+- Ao clicar, o comprador é enviado ao WhatsApp ou perfil do Discord do vendedor.
+- Copiar imagem continua disponível; Salvar PNG foi removido para simplificar o fluxo.
+
+======================================================================
+15. PERSISTÊNCIA LOCAL
+======================================================================
+
+Chaves principais atuais:
+
+pokecentral.desktop.v1
+- Contas.
+- Pokémon.
+- Itens.
+- Anúncios locais.
+
+pokecentral.sidebar.collapsed
+- Estado recolhido/expandido do menu lateral.
+
+pokecentral.showcase.profile.v1
+- WhatsApp.
+- Usuário e ID do Discord.
+- Contato preferido.
+
+Partições persistentes do Electron guardam as sessões do jogo separadamente.
+
+A versão atual usa localStorage para o painel. SQLite continua sendo uma
+possibilidade futura caso histórico, volume e consultas fiquem complexos.
+
+======================================================================
+16. SEGURANÇA E LIMITES INEGOCIÁVEIS
+======================================================================
+
+Configurações atuais:
+
+- nodeIntegration: false
+- contextIsolation: true
+- sandbox: true
+- webSecurity: true
+- allowRunningInsecureContent: false
+- API de preload explícita
+- Validação dos dados IPC
+- Navegação limitada a origens autorizadas
+- Links externos somente HTTPS e hosts permitidos
+- Sessões do jogo sem acesso às APIs internas do desktop
+
+Contato oficial de suporte e segurança: pokecentralrmt@gmail.com
+
+Documentação pública criada:
+
+- docs/SEGURANCA_E_TRANSPARENCIA.md
+- docs/PERMISSOES_E_DADOS.md
+- docs/SOLICITACAO_DE_AUTORIZACAO.md
+- docs/ROADMAP_APROVACAO_E_MONETIZACAO.md
+- docs/AUTORIZACAO_STAFF_0.12.2/ (mensagem, resumo, roteiro, checklist e evidências)
+- docs/PACOTE_AUTORIZACAO_STAFF_0.12.2.zip
+- Vídeo de avaliação: docs/AUTORIZACAO_STAFF_0.12.2/VIDEO_DEMONSTRACAO_POKECENTRAL_0.12.2.mp4
+- Verificação local com Microsoft Defender: zero detecções relacionadas ao instalador em 24/07/2026.
+- VirusTotal: link público recebido e hash confirmado; leitura do placar e captura da aba Detection pendentes por limite HTTP 429.
+- Evidências dos posts JustPokédex e PokeGrid: transcrições e links diretos das mensagens salvos; capturas de segurança recomendadas.
+
+Nunca incluir:
+
+- Auto-click.
+- Auto-hunt.
+- Auto-capture.
+- Macros de gameplay.
+- Leitura de memória.
+- Injeção no jogo.
+- Captura de senhas, cookies ou tokens.
+- Bypass do limite de contas.
+- Proxy ou VPN automática.
+- service_role do Supabase no aplicativo.
+- Publicação automática sem ação clara do usuário.
+
+======================================================================
+17. TESTES E VALIDAÇÃO
+======================================================================
+
+Comandos de validação usados no ambiente atual:
+
+TypeScript:
+
+C:\Users\MikPz\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe node_modules\typescript\bin\tsc --noEmit
+
+Build:
+
+C:\Users\MikPz\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe node_modules\electron-vite\bin\electron-vite.js build
+
+Instalador:
+
+C:\Users\MikPz\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe node_modules\electron-builder\out\cli\cli.js --win nsis
+
+Teste principal da Vitrine 0.12:
+
+tests/smoke-showcase-v12.cjs
+
+Itens validados:
+
+- Aba Ativos.
+- Sete campos de filtro.
+- Todas as ações do card.
+- Power exibido.
+- Link público gerado.
+- Nome do jogador presente.
+- Número da conta ausente do material compartilhado.
+- PNG gerado.
+- Stats e Power no compartilhamento.
+- Remoção automática.
+- Histórico em Removidos.
+- Restauração automática pelo mesmo ID.
+
+- Sem overflow horizontal na resolução de teste.
+
+Outros testes existentes cobrem launcher, grade, imagens, menu lateral,
+inventário, laboratório e versões anteriores da interface.
+
+Observação do ambiente:
+
+- A ferramenta de navegador integrada costuma falhar neste Windows com
+  “sandbox helper_unknown_error”.
+- Quando isso ocorre, a interface é validada diretamente em Electron com
+  smoke tests, capturas e medidas do DOM.
+
+======================================================================
+18. ARQUIVOS VISUAIS E IDENTIDADE
+======================================================================
+
+Ícones utilizados no desktop:
+
+src/renderer/public/icons/logo.png
+src/renderer/public/icons/mochila.png
+src/renderer/public/icons/lab.png
+src/renderer/public/icons/loja.png
+src/renderer/public/icons/hub.png
+src/renderer/public/icons/conta.png
+src/renderer/public/icons/vender-pokemon.png
+
+Ícone do executável:
+
+resources/icon.png
+
+Regras visuais:
+
+- Manter o padrão visual do PokeCentral.
+- Evitar interface poluída e controles duplicados.
+- Ícones devem permanecer legíveis no menu recolhido.
+- Conteúdo deve encaixar na janela sem rolagem horizontal.
+- Contas devem manter cores diferentes.
+- Botões selecionados precisam ter contraste evidente.
+- Imagens de Pokémon e itens devem usar caixas padronizadas.
+
+======================================================================
+19. PRÓXIMAS PRIORIDADES RECOMENDADAS
+======================================================================
+
+Prioridade imediata:
+
+- Acompanhar o ticket já aberto e aguardar a orientação da staff.
+- Enviar primeiro a mensagem curta e aguardar o canal indicado pela staff antes de encaminhar o executável.
+- Registrar versão, responsável, resposta e todas as condições da autorização.
+
+1. Validar links reais em diferentes versões do WhatsApp e Discord.
+2. Validar um link real no WhatsApp e Discord.
+3. Testar manualmente o instalador interno 0.13.4 em uma instalação limpa.
+4. Receber feedback visual do usuário sobre Vitrine e filtros.
+
+Depois:
+
+5. Melhorar gerenciamento de links, incluindo revogação real. A solução
+   atual expira, mas não pode ser revogada antes do prazo sem armazenamento
+   no servidor.
+6. Decidir se anúncios compartilhados precisam de uma página intermediária
+   mais completa antes de abrir o contato.
+7. Implementar autenticação do PokeCentral Desktop para publicação opcional
+   no marketplace, usando Supabase Auth e RLS.
+8. Nunca embutir service_role no desktop.
+9. Avaliar atualização automática e assinatura de código do instalador.
+10. Avaliar análise de farm/Hunt Analyzer apenas se os dados puderem ser
+    obtidos de forma permitida e somente leitura.
+
+======================================================================
+20. RELAÇÃO COM O SITE
+======================================================================
+
+Projetos separados e lado a lado:
+
+- pokecentralRMT: site público, marketplace e APIs.
+- pokecentral-desktop: launcher, inventário, laboratório e Vitrine local.
+
+O desktop não substitui o site.
+
+Site:
+
+- Catálogo público.
+- Marketplace.
+- Pedidos.
+- Reviews.
+- Leilões.
+- Login e dados públicos.
+- Previews compartilháveis.
+
+Desktop:
+
+- Gerenciamento local das sessões.
+- Inventário unificado.
+- Análise dos Pokémon.
+- Sugestão de preço.
+- Vitrine e histórico local.
+- Criação voluntária de imagem ou link.
+
+Mudanças no site devem continuar pequenas, separadas e sem incluir arquivos
+não relacionados do usuário.
+
+======================================================================
+21. COMO RETOMAR O DESENVOLVIMENTO
+======================================================================
+
+Ao abrir uma nova conversa ou sessão:
+
+1. Ler este arquivo integralmente.
+2. Confirmar que o diretório atual é pokecentral-desktop.
+3. Verificar package.json e a versão atual.
+4. Preservar alterações existentes do usuário.
+5. Não apagar anúncios locais nem sessões.
+6. Não modificar o projeto do site sem necessidade clara.
+7. Conferir se a rota pública /s/:data continua respondendo antes de alterar o compartilhamento.
+8. Fazer typecheck, build e smoke test depois de mudanças relevantes.
+9. Gerar um novo instalador somente após os testes passarem.
+10. Manter a interface simples, prática e alinhada ao site.
+
+======================================================================
+22. ATUALIZAÇÃO 0.14.0 — NAVEGAÇÃO, SAÚDE E VITRINE EM GRUPO
+======================================================================
+
+- Menu lateral reduzido a quatro destinos: Telas, Inventário, Laboratório e Vitrine.
+- A lista repetida de contas saiu do menu; o gerenciamento de sessões fica em um painel próprio.
+- O botão Telas retorna ao último estado do launcher, sem trocar grade por foco inesperadamente.
+- Cada tela ampliada mantém o comando Voltar à grade dentro da própria janela.
+- O processo principal observa os eventos nativos de página sem resposta e de recuperação.
+- Uma possível trava gera aviso visual; a página nunca é recarregada automaticamente e exige confirmação.
+- Anúncios recebem código local permanente por conta no padrão AC1-001, AC2-001 etc.
+- O contador do código é persistido separadamente: excluir histórico não permite reutilizar um código antigo.
+- A Vitrine permite selecionar qualquer quantidade de anúncios ativos e gerar páginas com até seis Pokémon por imagem.
+- O catálogo em grupo aceita nome opcional, não mostra conta/personagem e usa o código permanente para localização.
+- Cada página do catálogo pode ser copiada diretamente para WhatsApp, Discord ou outro grupo.
+- Versão do aplicativo: 0.14.0.
+- Instalador: release/PokeCentral Desktop Setup 0.14.0.exe.
+- SHA-256: 83BDE69125366B3D3ECD3029CB1D477FA3E47F5A1C5E9BD0CD83CCD3A7B7C417.
+- Validações: typecheck, build e smoke-navigation-catalog-v140.
+======================================================================
+23. ATUALIZAÇÃO 0.14.1 — ACABAMENTO VISUAL
+======================================================================
+
+- Corrigido o estado visual dos botões Anterior e Próxima no catálogo em grupo.
+- Botões de paginação agora têm fundo, contraste e estado desabilitado explícitos.
+- Chips de Ultra Ball e Idle Ball ficaram maiores e mais legíveis no modo grade.
+- O ícone de Telas agora usa icons/telas.png.
+- O ícone de Vitrine agora usa icons/vitrine.png.
+- Ícones do menu deixaram de usar corte e ampliação artificial; agora preservam proporção com object-fit contain.
+- Versão do aplicativo: 0.14.1.
+- Instalador: release/PokeCentral Desktop Setup 0.14.1.exe.
+- SHA-256: CD7E3BAB93A738442D20B261E254F62C61732393226E4242E156B8345C2410F6.
+- Validações: typecheck, build e smoke-navigation-catalog-v140.
+======================================================================
+24. ATUALIZAÇÃO 0.14.2 — PERSISTÊNCIA DE LOGIN ENTRE VERSÕES
+======================================================================
+
+- A pasta de perfil foi fixada explicitamente em AppData/Roaming/pokecentral-desktop.
+- A localização não depende mais do número da versão nem de mudanças futuras no nome do executável.
+- As quatro contas continuam usando partições permanentes e isoladas persist:pokecentral-conta-1 a 4.
+- O armazenamento das sessões é descarregado no disco após carregamentos, a cada 30 segundos e antes de encerrar.
+- A implementação não lê, exporta nem copia cookies, tokens ou senhas.
+- O instalador continua configurado com deleteAppDataOnUninstall false.
+- Atualizações devem ser instaladas por cima da versão anterior, sem desinstalação manual.
+- Versão do aplicativo: 0.14.2.
+- Instalador: release/PokeCentral Desktop Setup 0.14.2.exe.
+- SHA-256: D667D8F08ED3E7A1988449F631A1159B7456E5BF1BEA24244DC241118BA37D28.
+- Validações: typecheck, build e smoke-navigation-catalog-v140.
+======================================================================
+25. ATUALIZAÇÃO 0.14.3 — ÍCONES NORMALIZADOS
+======================================================================
+
+- Os ícones já possuíam alta resolução, mas continham margens transparentes grandes e diferentes.
+- Telas, Inventário, Laboratório e Vitrine foram recortados e normalizados em PNG transparente 512x512.
+- Todos mantêm proporção, margem visual uniforme e interpolação de alta qualidade.
+- Exibição no menu aumentada para 42x42 sem corte ou transformação artificial.
+- Versão do aplicativo: 0.14.3.
+- Instalador: release/PokeCentral Desktop Setup 0.14.3.exe.
+- SHA-256: DC8234F15C88BC3A979F088969FE620CD41CFA370A84734ED784025B7A9D18F2.
+- Validações: typecheck, build e smoke-navigation-catalog-v140.
+======================================================================
+26. ATUALIZAÇÃO 0.14.4 — ITENS E NAVEGAÇÃO DO INVENTÁRIO
+======================================================================
+
+- Parser de itens ampliado para objetos aninhados em item, definition, itemData e meta.
+- Quantidades reconhecidas em quantity, qty, count, amount e value.
+- Chaves de Boss Token aceitam número, texto numérico ou objeto aninhado.
+- Bronze Boss Token passa a ser reconhecido em camelCase, snake_case e estruturas de item com definição interna.
+- Inventário ganhou barra de rolagem vertical visível e estilizada; Laboratório e Vitrine não foram alterados.
+- Versão do aplicativo: 0.14.4.
+- Instalador: release/PokeCentral Desktop Setup 0.14.4.exe.
+- SHA-256: B033EE2B2387D3A20600FF20A518F10767F9DB4E73962F802B31E74CFF0D4089.
+- Validações: typecheck, build e smoke-navigation-catalog-v140.
+
+Decisão para o futuro Hunt Analyzer:
+- Separar medição real de sessão e simulação comparativa.
+- Medição: hunt, Pokémon usado, duração, kills, XP, XP/h, tempo médio por kill, capturas, shiny e gold quando enviados pelo jogo.
+- Comparação: usar sessões históricas do próprio jogador por hunt/Pokémon e indicar amostra e confiança.
+- Simulação: estimar eficiência usando stats, tipo e histórico; nunca apresentar estimativa como dado medido.
+- Aviso de farm parado deve ser configurável e exigir conta online mais ausência de kills.
+- Som de shiny deve ser opcional, com volume, teste e antirrepetição.
+- Backup local deve excluir sessões de login e credenciais.
+- Não implementar limpeza visual do jogo sem autorização específica da staff.
+======================================================================
+FIM DO REGISTRO
+======================================================================
+27. VERSÃO 0.15.0 — CENTRAL DE HUNTS (26/07/2026)
+- Criada a seção Hunts com identidade própria, sem reproduzir o painel do app usado como referência.
+- Catálogo oficial atualizado com 251 criaturas de hunt e os campos de tipo, nível da hunt, XP, golpes, atributos-base e loot.
+- Recomendação teórica cruza: golpes aprendidos no nível atual, STAB, efetividade de tipos com os multiplicadores amplificados das hunts, XP/kill e risco defensivo.
+- O resultado teórico é apresentado explicitamente como ponto de partida; não promete XP/h.
+- Adicionada coleta somente-leitura de eventos de combate já recebidos pela sessão do jogo. O aplicativo guarda apenas os totais locais necessários, nunca mensagens brutas, senha, token ou conversa.
+- Sessões registram por conta: hunt, Pokémon em uso quando informado pelo jogo, início/última kill, kills, XP, gold, capturas e shinies quando esses campos estiverem presentes.
+- Histórico local limitado às 200 sessões mais recentes, com comparação por XP/h e kills/h.
+- Alerta visual configurável para 5, 10 ou 20 minutos sem kills; pede verificação antes de recarregar para evitar falsos positivos.
+- A recomendação por “hunt premium de cada elemento/faixa” será confirmada pelo histórico observado: o anúncio da staff orienta o produto, mas o app não inventa uma marcação premium sem um campo oficial que identifique cada hunt.
+- Corrigido o ícone textual do menu Hunts para não interferir na leitura/navegação dos rótulos.
+- Novo teste: tests/smoke-hunts-v150.cjs (painel, sessão observada e 20 recomendações).
+- Typecheck, build, teste de navegação e teste visual de Hunts aprovados.
+- Instalador: release/PokeCentral Desktop Setup 0.15.0.exe
+- SHA-256: CF030ADFCFC236644B4E7694A198A8119BA08F90E0AFB3D3FFA8B838D99A46F4
+28. VERSÃO 0.15.1 — HUNTS SEPARADAS, CONFIGURAÇÕES E LOGIN PERSISTENTE (26/07/2026)
+- Hunts agora possui duas abas independentes:
+  1) Efetividade: estimativa de combate por elemento, golpes, STAB e risco.
+  2) Rentabilidade: comparação somente de sessões observadas por XP/h, gold/h ou kills/h.
+- A aba Efetividade exige primeiro a conta e depois mostra apenas os Pokémon daquela conta.
+- O filtro de hunt usa faixas exatas e inclui Todas, LV 50, LV 100, LV 150 e LV 200.
+- Confirmado pelo teste: a faixa LV 150 apresenta as 5 criaturas LV 150 existentes no catálogo atual.
+- Gerenciar contas virou Configurações, reunindo contas e preferências gerais.
+- Configurações incluem: Manter login sempre ativo, alerta de shiny, som de shiny e tempo sem kills (5/10/20 min).
+- O login agora possui uma segunda camada de persistência: cookies do domínio Idle World são copiados para um cofre local criptografado pelo Windows (DPAPI/safeStorage), separado por conta, e restaurados antes da página abrir.
+- Senhas não são armazenadas em texto aberto. O cofre só funciona para o mesmo usuário do Windows.
+- Testes aprovados: typecheck, build, smoke-hunts-v151 e regressão smoke-navigation-catalog-v140.
+- Instalador: release/PokeCentral Desktop Setup 0.15.1.exe
+- SHA-256: 10EC90ABB29F5FE46E0A1D338C13CC21051A49AD9E165532C981182F1863DBB4
+29. VERSÃO 0.15.2 — VARIANTES OUTLAND NAS HUNTS (26/07/2026)
+- Corrigida a separação de catálogo: variantes com pokeId >= 10000 continuam fora das referências normais do Laboratório, mas agora permanecem como alvos de Hunt.
+- Catálogo de Hunts ampliado de 251 para 299 criaturas oficiais.
+- Faixa LV 150 corrigida de 5 para 53 alvos.
+- Incluídos Brave Charizard, Hard Golem, Enraged Typhlosion e demais variantes Outland oficiais.
+- Variantes recebem identificação OUTLAND na Efetividade, além de tipos, quantidade de drops cadastrados e XP/kill.
+- Exemplo oficial: Brave Charizard LV 150 entrega 13.508 XP/kill; Charizard comum LV 80 entrega 3.848 XP/kill.
+- O Laboratório filtra huntVariant, impedindo que alvos especiais sejam confundidos com Pokémon possuídos.
+- Typecheck, build e smoke-hunts-v151 aprovados com confirmação de 53 alvos LV 150 e presença de Brave Charizard.
+- Instalador: release/PokeCentral Desktop Setup 0.15.2.exe
+- SHA-256: 118E04FC9EBBD4D444BE52277AB63189AB54B1C3CFEF405AC6EE23C746FDDC28
+30. VERSÃO 0.15.3 — ROLAGEM LOCAL E TIPOS COLORIDOS (26/07/2026)
+- Inventário: a página, filtros e cabeçalhos ficam fixos; somente a tabela de Pokémon/itens possui rolagem.
+- Hunts: cabeçalho, abas, seletores e resumo ficam fixos; somente ranking de efetividade ou histórico de rentabilidade rola.
+- Cabeçalho das tabelas permanece visível durante a rolagem.
+- Janelas até 960 px de altura usam modo funcional compacto, removendo o banner e título redundante para entregar mais altura à lista.
+- Etiquetas coloridas adicionadas para os 18 elementos no alvo, Pokémon analisado e melhor golpe.
+- Variantes especiais continuam marcadas como OUTLAND; a linha também informa quantidade de tipos de drop.
+- Teste smoke-local-scroll-v153 aprovado com 80 Pokémon e 53 hunts LV 150: página sem overflow e listas com overflow próprio.
+- Instalador: release/PokeCentral Desktop Setup 0.15.3.exe
+- SHA-256: EE38848C68E126B387E339B21DF5182EB8E773056CD8635235E3ED53E6962C71
+31. VERSÃO 0.15.4 — FAIXA AUTOMÁTICA E RENTABILIDADE ACUMULADA (26/07/2026)
+- Removida seleção manual de faixa de Hunt.
+- A Efetividade escolhe automaticamente a maior faixa de Hunt que não ultrapassa o nível atual do Pokémon.
+- Exemplo validado: Charizard LV 93 usa exclusivamente a faixa LV 80 (43 alvos), sem LV 100/150.
+- Melhorada identificação recursiva de hunt/alvo e Pokémon ativo nos eventos observados.
+- Adicionada leitura somente-leitura do painel Hunt Analyzer visível a cada 5 segundos quando presente.
+- O painel fornece totais autoritativos de kills, tempo, XP, capturas, loot e supply; nenhum clique ou alteração é feita no jogo.
+- Rentabilidade agora agrupa por Conta + Pokémon + Hunt e acumula sessões repetidas.
+- Ranking oferece XP/h, saldo/h, loot/h e kills/h.
+- Cada registro mostra média/h, total da métrica, tempo total, XP total, loot, supply, saldo, kills e quantidade de sessões.
+- Sessões sem hunt ou Pokémon identificados ficam fora do ranking e aparecem como coleta incompleta, evitando resultados enganosos.
+- Teste smoke-hunts-v154 aprovado: duas sessões agregadas em 1h30, 1.500.000 XP, .000 loot, .000 supply e .000 saldo.
+- Instalador: release/PokeCentral Desktop Setup 0.15.4.exe
+- SHA-256: 8B3BD14DAE0B4BAA6ABF5BDD6214EEDE598A1D0F9CA8546E79022569D8CE146E
+32. VERSÃO 0.16.0 — HUNTS AO VIVO, HISTÓRICO E ESTIMATIVAS (26/07/2026)
+- Rentabilidade reorganizada em três áreas independentes:
+  1) Ao vivo: no máximo uma leitura atual por conta, sem misturar registros antigos.
+  2) Histórico e ranking: tabela compacta somente com sessões encerradas e completas.
+  3) Estimativas: conta e Pokémon selecionados antes da previsão de próximas hunts.
+- Corrigido o coletor visual que aceitava elementos-pai inteiros e produzia nomes concatenados como RaichuHPEXPBrave MantineHP.
+- Nomes visuais agora precisam vir de elementos-folha, são normalizados e rejeitados quando contêm rótulos de HP, XP, Loot, Supply ou Hunt Analyzer.
+- Uma nova sessão é criada ao trocar de hunt, Pokémon ou quando os contadores do Hunt Analyzer são reiniciados.
+- Sessões antigas que ficaram abertas ao fechar o aplicativo são encerradas automaticamente no último horário válido; não reaparecem como Ao vivo.
+- O histórico local foi ampliado de 200 para 2.000 sessões.
+- Corrigido o catálogo oficial: baseAtk, baseDef, baseSpAtk e baseSpDef agora alimentam corretamente baseAttack, baseDefense, baseSpecialAttack e baseSpecialDefense. Exemplo validado: Charizard 84/78/109/85.
+- Efetividade deixou de restringir o resultado à maior faixa de nível. Todas as hunts com nível até o Pokémon selecionado podem ser comparadas, incluindo LV 150 Outland e LV 200.
+- Modelo estimado cruza stats reais quando disponíveis, golpes aprendidos, categoria física/especial, cooldown, STAB, vantagem amplificada, HP x5 da hunt, defesa do alvo, risco defensivo, XP/kill e loot esperado em valor NPC.
+- Colunas ordenáveis: hunt, nível, vantagem, XP/kill, tempo/kill, kills/h, XP/h estimado, loot NPC/h e risco.
+- Cada previsão informa a origem: TEÓRICO, CALIBRADO pelo histórico do Pokémon ou MEDIDO naquela combinação.
+- A previsão vigente é registrada quando uma sessão começa. O histórico compara depois o resultado real contra essa fotografia original, evitando recalcular o passado com informações aprendidas posteriormente.
+- Histórico agrupa por Conta + Pokémon + Hunt, usa totais ponderados pelo tempo e oferece ordenação por Pokémon, hunt, sessões, duração, XP/h, lucro/h e kills/h.
+- Confiança por tempo: menos de 10 min = amostra curta; 10–30 min = média; 30+ min = alta. Filtro permite esconder testes abaixo de 10 ou 30 minutos.
+- Loot bruto, supply e lucro líquido permanecem separados.
+- Alerta de farm parado foi removido da página Hunts e movido para a barra da própria janela da conta.
+- O alerta só aparece com conta sendo coletada, Pokémon/hunt identificados, pelo menos uma kill e ausência simultânea de mudanças em kills, XP, loot e capturas durante o período configurado.
+- O alerta permite verificar e recarregar somente a conta afetada.
+- Teste novo: tests/smoke-hunts-v160.cjs.
+- Validações aprovadas: typecheck, build, smoke-hunts-v160 e smoke-navigation-catalog-v140.
+- Catálogo validado: 53 alvos LV 150 (XP 3.848–13.508) e 6 alvos LV 200 (6.008 XP).
+- Instalador: release/PokeCentral Desktop Setup 0.16.0.exe
+- Tamanho: 107,38 MB
+- SHA-256: B00D45A10AB2D35CF38F1B650D15280DA03E13402C22054002465D4616345A54
+33. DISTRIBUIÇÃO PORTÁTIL DA VERSÃO 0.16.0 (27/07/2026)
+- Gerada uma distribuição Windows portátil, executável diretamente e sem instalação.
+- O modo portátil mantém configurações, inventário, histórico e sessões em %AppData%\pokecentral-desktop.
+- Essa decisão permite substituir o executável em atualizações sem apagar os dados locais.
+- O cofre de login permanece criptografado e vinculado ao usuário atual do Windows.
+- Arquivo: release/PokeCentral Desktop Portable 0.16.0.exe
+- Tamanho: 97,11 MB
+- SHA-256: 7D32E41DCC7AE86A4C09D3AEE2A71A73229E0B93863514A9ECCFB50A65AC086E
+34. VERSÃO 0.16.1 — INVENTÁRIO E DETECÇÃO DE HUNT TRAVADA (28/07/2026)
+- Adicionado botão Analisar em cada linha de Pokémon do Inventário.
+- O botão abre o Laboratório já com a conta e o Pokémon exatos selecionados, inclusive ao repetir a consulta do mesmo Pokémon.
+- A lista do Inventário passou a usar uma única área ampla de resultados com rolagem local; filtros, abas e cabeçalhos permanecem estáveis.
+- No modo Tudo, Pokémon, Pokébolas e itens continuam na mesma área vertical, sem dividir a altura disponível em pequenas caixas independentes.
+- Corrigido o alerta de hunt travada antes da primeira kill: uma sessão zerada passa a ser acompanhada quando alvo e Pokémon já foram identificados.
+- O alerta não exige mais kills anteriores; considera ausência de mudança em kills, XP, loot ou capturas durante o período configurado.
+- A coleta visual do alvo foi endurecida para aceitar somente textos-folha curtos e normalizados, reduzindo nomes concatenados incorretos.
+- Teste novo: tests/smoke-inventory-alert-v161.cjs.
+- Validações aprovadas: typecheck, build, smoke-inventory-alert-v161 e smoke-hunts-v160.
+- No teste visual, a área de resultados teve 473 px de altura e overflow local com 60 Pokémon; o alerta zerado e a navegação para o Pokémon exato foram confirmados.
+- Instalador: release/PokeCentral Desktop Setup 0.16.1.exe
+- Tamanho do instalador: 112.593.152 bytes
+- SHA-256 do instalador: ECC783AEC8C4923D5038D67F4E2BCAC75712963561E07D6FC8468A69EB1CFDED
+- Portátil: release/PokeCentral Desktop Portable 0.16.1.exe
+- Tamanho do portátil: 101.822.141 bytes
+- SHA-256 do portátil: 6E2EC16EF01680B83FB34A120AFC7F46D644BC5F63381BB3F0DE1EA8028D2F67
+35. VERSÃO 0.16.2 — NÍVEL ATUAL, ITENS DINÂMICOS E MODO ECONÔMICO (28/07/2026)
+- A leitura do Hunt Analyzer agora também observa nome e nível dos Pokémon do time visível a cada ciclo de 5 segundos.
+- Quando um nível muda, o inventário local é atualizado imediatamente e as estimativas de Hunts são recalculadas pelo React com o dado novo.
+- Em espécies repetidas, a leitura é associada ao exemplar de nível mais próximo para reduzir atualizações no Pokémon errado.
+- A coleta de itens deixou de depender apenas de nomes e categorias previamente cadastrados.
+- Listas com nome/id + quantidade, mapas de contagem, catálogos em lista ou objeto e chaves novas dentro da mochila passam a ser detectados genericamente.
+- Bronze Boss Token e TM Disc Piece são suportados sem regras específicas de nome; o mesmo mecanismo cobre novos itens futuros compatíveis com esses formatos.
+- Campos técnicos como paginação, capacidade e quantidade de slots são rejeitados para não virarem itens falsos.
+- Adicionado Modo Econômico nas Configurações.
+- O modo reduz a renderização visual de cada sessão para 20 FPS, preservando o funcionamento do jogo, sessões, coleta, detector de farm parado e avisos de shiny.
+- O estado ECO fica salvo e é reaplicado mesmo quando a sessão do jogo só é criada depois.
+- Indicadores ECO 20 FPS/ECO aparecem na tela individual e na grade.
+- O ganho esperado é maior em CPU/GPU; a redução de memória é limitada porque cada conta ainda precisa de uma sessão de navegador isolada.
+- Teste novo: tests/smoke-fresh-items-eco-v162.cjs.
+- Validações aprovadas: typecheck, build, smoke-fresh-items-eco-v162, smoke-inventory-alert-v161 e smoke-hunts-v160.
+- Instalador: release/PokeCentral Desktop Setup 0.16.2.exe
+- Tamanho do instalador: 112.593.994 bytes
+- SHA-256 do instalador: 27B9832D403D034DCDAAFF25B8A5FFFFD95DC9165FBA1219896C2FCAC7D097BA
+- Portátil: release/PokeCentral Desktop Portable 0.16.2.exe
+- Tamanho do portátil: 101.823.076 bytes
+- SHA-256 do portátil: 75FB64F7767DDABC189643927EAD1A78BA62B669290D2B159D1D5FA68C0ECCAD
+36. VERSÃO 0.17.0 — IDENTIDADE DA HUNT, CAPTURAS E INVENTÁRIO AMPLO (28/07/2026)
+- Corrigida a identificação visual do Pokémon usado na hunt: o coletor usa o card ativo mais alto do time, em vez do primeiro nome coincidente encontrado no inventário.
+- Uma mudança de Pokémon só é confirmada após duas leituras consecutivas iguais, reduzindo alternância falsa e fragmentação de sessões.
+- Novas sessões registram origem e confiança da identidade: evento explícito do jogo ou card ativo confirmado.
+- Registros antigos sem essa confirmação permanecem visíveis como registro antigo/incerto, mas não calibram as novas estimativas.
+- O Hunt Analyzer agora coleta também o valor monetário mostrado junto a Capturados.
+- Saldo real passou a usar Loot + valor das capturas − Supply.
+- Ao vivo mostra quantidade e valor de capturas, capturas/h, shiny encontrado/capturado/fugido quando esses eventos forem fornecidos e saldo real.
+- Histórico ganhou Capturas/h e mostra total de capturas, valor das capturas, shinies e confiança da identidade.
+- Eventos observáveis de tentativa, sucesso, falha e fuga passam a alimentar captureAttempts, shinyEncounters, shinyCaptured e shinyEscaped sem automação ou cliques no jogo.
+- Estimativas agora ignoram identidade antiga/incerta e aprendem com sessões confirmadas.
+- Uma combinação Pokémon + hunt com 30 minutos ou mais usa a medição real; amostras menores são combinadas progressivamente com a teoria.
+- Na ausência da combinação exata, sessões confirmadas do mesmo Pokémon calibram a teoria por razão ponderada pelo tempo, preservando diferenças entre hunts.
+- Validação: Typhlosion em Golem, 600 kills/h, foi mantido como Typhlosion e a estimativa de Golem passou a 600 kills/h com rótulo MEDIDO.
+- Inventário passou a ter rolagem geral da página e rolagem própria em caixas amplas de Pokémon e itens.
+- Na aba Tudo, as caixas ficam empilhadas e a página navega entre elas; nas abas específicas, uma caixa ocupa a maior parte da altura disponível.
+- Cabeçalhos das tabelas permanecem fixos dentro de cada caixa.
+- Item 70000 passa a ser apresentado como Bronze Boss Token após nova sincronização.
+- Teste novo: tests/smoke-hunt-captures-v170.cjs.
+- Validações aprovadas: typecheck, build, smoke-hunt-captures-v170, smoke-inventory-alert-v161 e smoke-hunts-v160.
+- Instalador: release/PokeCentral Desktop Setup 0.17.0.exe
+- Tamanho do instalador: 112.595.297 bytes
+- SHA-256 do instalador: 721BA8FB510E62213AC815A5FCBC6CDAD6035C694770B044737AB80C40EB6260
+- Portátil: release/PokeCentral Desktop Portable 0.17.0.exe
+- Tamanho do portátil: 101.825.075 bytes
+- SHA-256 do portátil: ACB32D34E282D8DAE6CC28C6C0B5244165611A194F8134FC18D5E70DFDF5C6D1

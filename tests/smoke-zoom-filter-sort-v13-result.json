@@ -1,0 +1,79 @@
+{
+  "gridInitial": {
+    "values": [
+      "100%",
+      "100%"
+    ],
+    "minus": 4,
+    "mainWidth": 1174
+  },
+  "gridAdjusted": "110%",
+  "single": {
+    "zoom": "PADRÃO 70%",
+    "sessionControl": 0,
+    "hosts": 1
+  },
+  "gridReturned": [
+    "100%",
+    "100%"
+  ],
+  "collapsed": {
+    "mainWidth": 1412,
+    "className": "app-shell sidebar-collapsed",
+    "sidebarWidth": 72
+  },
+  "filters": {
+    "labels": [
+      "LV mínimo",
+      "IV mínimo",
+      "IV máximo",
+      "Quality mínima",
+      "Quality máxima"
+    ],
+    "sortable": 8,
+    "hint": "↕ Clique nos títulos para ordenar · 3 registros"
+  },
+  "filteredRows": [
+    "Charizard"
+  ],
+  "descending": {
+    "rows": [
+      "Golem",
+      "Charizard",
+      "Bulbasaur"
+    ],
+    "icon": "IV total▼"
+  },
+  "ascending": {
+    "rows": [
+      "Bulbasaur",
+      "Charizard",
+      "Golem"
+    ],
+    "icon": "IV total▲"
+  },
+  "lastPlacements": [
+    {
+      "slot": 1,
+      "bounds": {
+        "x": 86,
+        "y": 44,
+        "width": 689,
+        "height": 777
+      },
+      "zoomFactor": 0.53828125,
+      "persistSession": true
+    },
+    {
+      "slot": 2,
+      "bounds": {
+        "x": 781,
+        "y": 44,
+        "width": 689,
+        "height": 777
+      },
+      "zoomFactor": 0.53828125,
+      "persistSession": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "pokemon": [
+    {
+      "especie": "Pikachu",
+      "nivel": 34,
+      "iv": 88.5,
+      "qualidade": "Rare",
+      "shiny": false,
+      "poder": 3240
+    }
+  ]
+}

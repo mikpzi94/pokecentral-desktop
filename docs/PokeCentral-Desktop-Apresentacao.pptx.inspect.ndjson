@@ -1,0 +1,209 @@
+{"kind":"deck","id":"pr/qbr60y","name":"Deck"}
+{"kind":"layout","layoutId":"5e442cd1-ea3f-40e9-8373-ea16d0849307","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"74c7ed9f-bcf0-4938-9661-ae3dff9d0aae","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/f0sj4i","slide":1,"title":"POKECENTRAL","textShapes":5}
+{"kind":"shape","id":"sh/6lor2poz","slide":1,"bbox":[0,0,1280,10]}
+{"kind":"shape","id":"sh/tozadknq","slide":1,"bbox":[62,66,4,586]}
+{"kind":"shape","id":"sh/snq94z65","slide":1,"bbox":[94,94,116,116]}
+{"kind":"textbox","id":"sh/up8b6pob","slide":1,"text":"POKECENTRAL","textPreview":"POKECENTRAL","textChars":11,"textLines":1,"bbox":[94,246,1040,78]}
+{"kind":"textbox","id":"sh/hszah4nm","slide":1,"text":"DESKTOP","textPreview":"DESKTOP","textChars":7,"textLines":1,"bbox":[94,318,700,58]}
+{"kind":"textbox","id":"sh/grqt8z6h","slide":1,"text":"Contas, inventário e análise em uma central local.","textPreview":"Contas, inventário e análise em uma central local.","textChars":50,"textLines":1,"bbox":[96,416,900,44]}
+{"kind":"textbox","id":"sh/3uhsje5s","slide":1,"text":"Launcher independente para Windows  •  versão 0.12.1","textPreview":"Launcher independente para Windows  •  versão 0.12.1","textChars":52,"textLines":1,"bbox":[96,486,820,30]}
+{"kind":"textbox","id":"sh/2t8ba9o7","slide":1,"text":"Ferramenta complementar. Não automatiza ações dentro do jogo.","textPreview":"Ferramenta complementar. Não automatiza ações dentro do jogo.","textChars":61,"textLines":1,"bbox":[96,590,1000,26]}
+{"kind":"image","id":"im/uhgzydkn","slide":1,"name":"","alt":"Logotipo PokeCentral Desktop","bbox":[114,114,76,76]}
+{"kind":"notes","id":"nt/f0sj4i","slide":1,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/src/renderer/public/icons/logo.png\n[/Sources]"}
+{"kind":"slide","id":"sl/syxpou","slide":2,"title":"VISÃO","textShapes":15}
+{"kind":"shape","id":"sh/udcrydcn","slide":2,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/hgnqtsvy","slide":2,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/gfe90nut","slide":2,"text":"VISÃO","textPreview":"VISÃO","textChars":5,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/3i58v2d4","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/ihwr2xcj","slide":2,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/54naxcva","slide":2,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/43e947up","slide":2,"text":"Quatro contas não precisam virar quatro rotinas.","textPreview":"Quatro contas não precisam virar quatro rotinas.","textChars":48,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/jml8jyd0","slide":2,"text":"O aplicativo reúne o que hoje exige alternância, conferência e organização manual.","textPreview":"O aplicativo reúne o que hoje exige alternância, conferência e organização manual.","textChars":82,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/ylsrqtcf","slide":2,"bbox":[68,194,94,5]}
+{"kind":"textbox","id":"sh/4vexsje1","slide":2,"text":"O jogador continua jogando.\nO PokeCentral organiza ao redor.","textPreview":"O jogador continua jogando. | O PokeCentral organiza ao redor.","textChars":60,"textLines":2,"bbox":[68,244,500,128]}
+{"kind":"textbox","id":"sh/5wnylov6","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[650,232,58,34]}
+{"kind":"textbox","id":"sh/itwfq9wv","slide":2,"text":"SESSÕES","textPreview":"SESSÕES","textChars":7,"textLines":1,"bbox":[726,232,430,30]}
+{"kind":"textbox","id":"sh/ju5gjedg","slide":2,"text":"Até quatro logins isolados, preservados ao trocar de tela.","textPreview":"Até quatro logins isolados, preservados ao trocar de tela.","textChars":58,"textLines":1,"bbox":[726,270,460,54]}
+{"kind":"shape","id":"sh/sjyxwjex","slide":2,"bbox":[650,334,536,1]}
+{"kind":"textbox","id":"sh/tk7ypovi","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[650,358,58,34]}
+{"kind":"textbox","id":"sh/6xgfu9wr","slide":2,"text":"INVENTÁRIO","textPreview":"INVENTÁRIO","textChars":10,"textLines":1,"bbox":[726,358,430,30]}
+{"kind":"textbox","id":"sh/ripgnedc","slide":2,"text":"Pokémon, Pokébolas e itens consolidados em um único lugar.","textPreview":"Pokémon, Pokébolas e itens consolidados em um único lugar.","textChars":58,"textLines":1,"bbox":[726,396,460,54]}
+{"kind":"shape","id":"sh/8nuxkzet","slide":2,"bbox":[650,460,536,1]}
+{"kind":"textbox","id":"sh/9o3ed4fe","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[650,484,58,34]}
+{"kind":"textbox","id":"sh/pkvehg72","slide":2,"text":"DECISÃO","textPreview":"DECISÃO","textChars":7,"textLines":1,"bbox":[726,484,430,30]}
+{"kind":"textbox","id":"sh/ojmdob6h","slide":2,"text":"Análise, preço sugerido e compartilhamento somente quando solicitado.","textPreview":"Análise, preço sugerido e compartilhamento somente quando solicitado.","textChars":69,"textLines":1,"bbox":[726,522,460,54]}
+{"kind":"shape","id":"sh/nidcf6pw","slide":2,"bbox":[650,586,536,1]}
+{"kind":"notes","id":"nt/syxpou","slide":2,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n[/Sources]"}
+{"kind":"slide","id":"sl/5bfqhp","slide":3,"title":"LAUNCHER","textShapes":8}
+{"kind":"shape","id":"sh/gr6tcfep","slide":3,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/fqxs3ax4","slide":3,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/epoba5wj","slide":3,"text":"LAUNCHER","textPreview":"LAUNCHER","textChars":8,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/pwza9kf6","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/ov6tgfel","slide":3,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/3uxs7ux0","slide":3,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/2tobepwf","slide":3,"text":"Todas as contas permanecem visíveis e independentes.","textPreview":"Todas as contas permanecem visíveis e independentes.","textChars":52,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/x0zud4f2","slide":3,"text":"Grade 2×2 por padrão; qualquer sessão pode ser ampliada sem perder o estado.","textPreview":"Grade 2×2 por padrão; qualquer sessão pode ser ampliada sem perder o estado.","textChars":76,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/czqtkzeh","slide":3,"bbox":[68,194,94,5]}
+{"kind":"shape","id":"sh/yl8ru50z","slide":3,"bbox":[60,210,906,434]}
+{"kind":"textbox","id":"sh/0nq9wfip","slide":3,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1000,244,150,70]}
+{"kind":"textbox","id":"sh/lozq5kja","slide":3,"text":"SESSÕES\nISOLADAS","textPreview":"SESSÕES | ISOLADAS","textChars":16,"textLines":2,"bbox":[1000,318,190,62]}
+{"kind":"shape","id":"sh/mp8ry50v","slide":3,"bbox":[1000,402,190,2]}
+{"kind":"textbox","id":"sh/nq1s7a1g","slide":3,"text":"• login persistente\n• conta por cor\n• grade ou foco\n• menu recolhível","textPreview":"• login persistente | • conta por cor | • grade ou foco | • menu recolhível","textChars":69,"textLines":4,"bbox":[1000,426,210,132]}
+{"kind":"image","id":"im/grm98zed","slide":3,"name":"","alt":"Grade 2x2 do launcher","bbox":[68,218,890,418]}
+{"kind":"notes","id":"nt/5bfqhp","slide":3,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n- C:\\Users\\MikPz\\Desktop\\IA\\PROJETO POKE IDLE WOLRD SITE\\pokecentral-desktop\\.presentation-assets/launcher-grid.png — captura fornecida pelo usuário\n[/Sources]"}
+{"kind":"slide","id":"sl/zrfkkr","slide":4,"title":"INVENTÁRIO","textShapes":9}
+{"kind":"shape","id":"sh/0nq5czup","slide":4,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/zmho3utk","slide":4,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/yl8napcz","slide":4,"text":"INVENTÁRIO","textPreview":"INVENTÁRIO","textChars":10,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/dkz61kbe","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/cz658fut","slide":4,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/byxozat8","slide":4,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/qxon65cn","slide":4,"text":"Um inventário único reduz procura e comparação manual.","textPreview":"Um inventário único reduz procura e comparação manual.","textChars":54,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/xgj6d4bi","slide":4,"text":"Filtros por conta, nível, IV, raridade e shiny ajudam a encontrar o que importa.","textPreview":"Filtros por conta, nível, IV, raridade e shiny ajudam a encontrar o que importa.","textChars":80,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/wvapkjax","slide":4,"bbox":[68,194,94,5]}
+{"kind":"shape","id":"sh/mtwj6h4b","slide":4,"bbox":[60,208,1160,370]}
+{"kind":"textbox","id":"sh/8vy187mh","slide":4,"text":"TUDO","textPreview":"TUDO","textChars":4,"textLines":1,"bbox":[68,592,248,26]}
+{"kind":"textbox","id":"sh/tw7i1cnm","slide":4,"text":"POKÉMON","textPreview":"POKÉMON","textChars":7,"textLines":1,"bbox":[354,592,248,26]}
+{"kind":"textbox","id":"sh/y5wj2x4z","slide":4,"text":"POKÉBOLAS","textPreview":"POKÉBOLAS","textChars":9,"textLines":1,"bbox":[640,592,248,26]}
+{"kind":"textbox","id":"sh/z650v25k","slide":4,"text":"ITENS","textPreview":"ITENS","textChars":5,"textLines":1,"bbox":[926,592,248,26]}
+{"kind":"image","id":"im/c7i1ob21","slide":4,"name":"","alt":"Inventário unificado do PokeCentral Desktop","bbox":[68,216,1144,354]}
+{"kind":"notes","id":"nt/zrfkkr","slide":4,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n- C:\\Users\\MikPz\\Desktop\\IA\\PROJETO POKE IDLE WOLRD SITE\\pokecentral-desktop\\.presentation-assets/inventory.png — captura fornecida pelo usuário\n[/Sources]"}
+{"kind":"slide","id":"sl/g418tg","slide":5,"title":"LABORATÓRIO","textShapes":8}
+{"kind":"shape","id":"sh/nehw3epk","slide":5,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/ofqxwj6p","slide":5,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/9gze5o7a","slide":5,"text":"LABORATÓRIO","textPreview":"LABORATÓRIO","textChars":11,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/ahsfytov","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/bi1g7epg","slide":5,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/wjax0j61","slide":5,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/xkjy9o7m","slide":5,"text":"A análise transforma números em uma leitura prática.","textPreview":"A análise transforma números em uma leitura prática.","textChars":52,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/qlofmpor","slide":5,"text":"Quality, IV, Power e seis atributos aparecem juntos, com potencial apresentado como estimativa.","textPreview":"Quality, IV, Power e seis atributos aparecem juntos, com potencial apresentado como estimativa.","textChars":95,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/rmxwvupc","slide":5,"bbox":[68,194,94,5]}
+{"kind":"shape","id":"sh/ruh8rmpo","slide":5,"bbox":[60,206,776,442]}
+{"kind":"textbox","id":"sh/dwjqtw7u","slide":5,"text":"A LEITURA REÚNE","textPreview":"A LEITURA REÚNE","textChars":15,"textLines":1,"bbox":[870,228,300,28]}
+{"kind":"textbox","id":"sh/svq9kr69","slide":5,"text":"Raridade\nIV total\nQuality\nPower atual\nSeis atributos\nPotencial estimado","textPreview":"Raridade | IV total | Quality | Power atual | Seis atributos | Potencial estimado","textChars":71,"textLines":6,"bbox":[870,278,310,244]}
+{"kind":"textbox","id":"sh/3qh8nmps","slide":5,"text":"A classificação auxilia a triagem; não substitui uma medição oficial do jogo.","textPreview":"A classificação auxilia a triagem; não substitui uma medição oficial do jogo.","textChars":77,"textLines":1,"bbox":[870,548,300,76]}
+{"kind":"image","id":"im/hk7qlwva","slide":5,"name":"","alt":"Laboratório de análise de Pokémon","bbox":[68,214,760,426]}
+{"kind":"notes","id":"nt/g418tg","slide":5,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n- C:\\Users\\MikPz\\Desktop\\IA\\PROJETO POKE IDLE WOLRD SITE\\pokecentral-desktop\\.presentation-assets/laboratory.png — captura fornecida pelo usuário\n[/Sources]"}
+{"kind":"slide","id":"sl/45i08c","slide":6,"title":"VITRINE","textShapes":14}
+{"kind":"shape","id":"sh/325crm10","slide":6,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/43etkril","slide":6,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/5onutwjq","slide":6,"text":"VITRINE","textPreview":"VITRINE","textChars":7,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/qpwbm10b","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/rqpcv61w","slide":6,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/srytobih","slide":6,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/ds7uxgj2","slide":6,"text":"O anúncio nasce local e só sai quando o jogador decide.","textPreview":"O anúncio nasce local e só sai quando o jogador decide.","textChars":55,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/mtcbax07","slide":6,"text":"Preço sugerido, contatos e compartilhamento ficam sob ação explícita do usuário.","textPreview":"Preço sugerido, contatos e compartilhamento ficam sob ação explícita do usuário.","textChars":80,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/7ulcj21s","slide":6,"bbox":[68,194,94,5]}
+{"kind":"shape","id":"sh/32h8nmt0","slide":6,"bbox":[60,206,826,440]}
+{"kind":"textbox","id":"sh/pojqpcbq","slide":6,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[922,226,38,34]}
+{"kind":"textbox","id":"sh/4nq9g7al","slide":6,"text":"CRIAR","textPreview":"CRIAR","textChars":5,"textLines":1,"bbox":[978,226,220,26]}
+{"kind":"textbox","id":"sh/fyh8j2to","slide":6,"text":"Selecionar o Pokémon e decidir o preço.","textPreview":"Selecionar o Pokémon e decidir o preço.","textChars":39,"textLines":1,"bbox":[978,262,220,60]}
+{"kind":"textbox","id":"sh/ux8raxc3","slide":6,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[922,354,38,34]}
+{"kind":"textbox","id":"sh/h0zqlcbu","slide":6,"text":"REVISAR","textPreview":"REVISAR","textChars":7,"textLines":1,"bbox":[978,354,220,26]}
+{"kind":"textbox","id":"sh/gzq9c7u9","slide":6,"text":"Confirmar dados, contato e negociação.","textPreview":"Confirmar dados, contato e negociação.","textChars":38,"textLines":1,"bbox":[978,390,220,60]}
+{"kind":"textbox","id":"sh/7ux8f2ts","slide":6,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[922,482,38,34]}
+{"kind":"textbox","id":"sh/6to76xc7","slide":6,"text":"COMPARTILHAR","textPreview":"COMPARTILHAR","textChars":12,"textLines":1,"bbox":[978,482,220,26]}
+{"kind":"textbox","id":"sh/a5orixwz","slide":6,"text":"Copiar imagem ou gerar link temporário.","textPreview":"Copiar imagem ou gerar link temporário.","textChars":39,"textLines":1,"bbox":[978,518,220,60]}
+{"kind":"image","id":"im/xs3mdgra","slide":6,"name":"","alt":"Vitrine local e criação de anúncios","bbox":[68,214,810,424]}
+{"kind":"notes","id":"nt/45i08c","slide":6,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n- C:\\Users\\MikPz\\Desktop\\IA\\PROJETO POKE IDLE WOLRD SITE\\pokecentral-desktop\\.presentation-assets/showcase.png — captura gerada pelo teste smoke-showcase-v12.cjs\n[/Sources]"}
+{"kind":"slide","id":"sl/9jdyeh","slide":7,"title":"PRINCÍPIOS","textShapes":10}
+{"kind":"shape","id":"sh/xgvqx0vu","slide":7,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/ad472lcj","slide":7,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/ved8vqd4","slide":7,"text":"PRINCÍPIOS","textPreview":"PRINCÍPIOS","textChars":10,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/8bmp0vud","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/9cvqt0vy","slide":7,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/m947ylc7","slide":7,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/nad8rqds","slide":7,"text":"O jogador permanece no controle de cada ação.","textPreview":"O jogador permanece no controle de cada ação.","textChars":45,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/s769cfuh","slide":7,"text":"A proposta é organizar informações — nunca substituir a interação humana com o jogo.","textPreview":"A proposta é organizar informações — nunca substituir a interação humana com o jogo.","textChars":84,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/t8zq5kv2","slide":7,"bbox":[68,194,94,5]}
+{"kind":"textbox","id":"sh/5ofalgbi","slide":7,"text":"O APLICATIVO FAZ","textPreview":"O APLICATIVO FAZ","textChars":16,"textLines":1,"bbox":[88,236,460,32]}
+{"kind":"textbox","id":"sh/knm9sbux","slide":7,"text":"O APLICATIVO NÃO FAZ","textPreview":"O APLICATIVO NÃO FAZ","textChars":20,"textLines":1,"bbox":[696,236,470,32]}
+{"kind":"shape","id":"sh/jmdsj6ts","slide":7,"bbox":[640,228,2,376]}
+{"kind":"textbox","id":"sh/il4rq1c7","slide":7,"text":"✓ abre sessões separadas\n✓ organiza dados da própria conta\n✓ consolida inventário\n✓ calcula indicadores locais\n✓ compartilha quando solicitado","textPreview":"✓ abre sessões separadas | ✓ organiza dados da própria conta | ✓ consolida inventário | ✓ calcula indicadores locais | ✓ compartilha quan...","textChars":142,"textLines":5,"bbox":[88,296,500,266]}
+{"kind":"textbox","id":"sh/xkvahwbm","slide":7,"text":"× não clica nem movimenta\n× não caça nem captura\n× não executa macros\n× não lê memória do processo\n× não coleta senha ou token","textPreview":"× não clica nem movimenta | × não caça nem captura | × não executa macros | × não lê memória do processo | × não coleta senha ou token","textChars":126,"textLines":5,"bbox":[696,296,500,266]}
+{"kind":"textbox","id":"sh/wjm9obu1","slide":7,"text":"SEM AUTOMAÇÃO DE GAMEPLAY","textPreview":"SEM AUTOMAÇÃO DE GAMEPLAY","textChars":25,"textLines":1,"bbox":[88,584,1098,40]}
+{"kind":"notes","id":"nt/9jdyeh","slide":7,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n[/Sources]"}
+{"kind":"slide","id":"sl/oyy8vn","slide":8,"title":"SEGURANÇA","textShapes":14}
+{"kind":"shape","id":"sh/doza1on2","slide":8,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/qlobq94b","slide":8,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/rmhsze5w","slide":8,"text":"SEGURANÇA","textPreview":"SEGURANÇA","textChars":9,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/0rqtwjmd","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/1sza5ony","slide":8,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/ep8bu94n","slide":8,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/zqhs3e5s","slide":8,"text":"Privacidade local é o comportamento padrão.","textPreview":"Privacidade local é o comportamento padrão.","textChars":43,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/gv69kzm9","slide":8,"text":"As sessões do jogo ficam separadas das funções internas do desktop.","textPreview":"As sessões do jogo ficam separadas das funções internas do desktop.","textChars":67,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/hwfatknu","slide":8,"bbox":[68,194,94,5]}
+{"kind":"shape","id":"sh/p0v6x47m","slide":8,"bbox":[88,224,8,66]}
+{"kind":"textbox","id":"sh/ozm54zq1","slide":8,"text":"SESSÕES","textPreview":"SESSÕES","textChars":7,"textLines":1,"bbox":[122,224,250,28]}
+{"kind":"textbox","id":"sh/nedovupw","slide":8,"text":"Cada conta usa uma partição persistente própria.","textPreview":"Cada conta usa uma partição persistente própria.","textChars":48,"textLines":1,"bbox":[384,224,770,52]}
+{"kind":"shape","id":"sh/2d4n298b","slide":8,"bbox":[122,300,1032,1]}
+{"kind":"shape","id":"sh/x4f61o7y","slide":8,"bbox":[88,320,8,66]}
+{"kind":"textbox","id":"sh/c3658jqd","slide":8,"text":"COLETA","textPreview":"COLETA","textChars":6,"textLines":1,"bbox":[122,320,250,28]}
+{"kind":"textbox","id":"sh/b2xozeps","slide":8,"text":"Somente informações recebidas pela sessão autenticada do jogador.","textPreview":"Somente informações recebidas pela sessão autenticada do jogador.","textChars":65,"textLines":1,"bbox":[384,320,770,52]}
+{"kind":"shape","id":"sh/a1on6987","slide":8,"bbox":[122,396,1032,1]}
+{"kind":"shape","id":"sh/l8f65o7u","slide":8,"bbox":[88,416,8,66]}
+{"kind":"textbox","id":"sh/k76pcj69","slide":8,"text":"ARMAZENAMENTO","textPreview":"ARMAZENAMENTO","textChars":13,"textLines":1,"bbox":[122,416,250,28]}
+{"kind":"textbox","id":"sh/kbe987el","slide":8,"text":"Inventário, anúncios e contatos permanecem no computador.","textPreview":"Inventário, anúncios e contatos permanecem no computador.","textChars":57,"textLines":1,"bbox":[384,416,770,52]}
+{"kind":"shape","id":"sh/5cnq1cf6","slide":8,"bbox":[122,492,1032,1]}
+{"kind":"shape","id":"sh/i9w76xwf","slide":8,"bbox":[88,512,8,66]}
+{"kind":"textbox","id":"sh/ja58z2x0","slide":8,"text":"COMPARTILHAMENTO","textPreview":"COMPARTILHAMENTO","textChars":16,"textLines":1,"bbox":[122,512,250,28]}
+{"kind":"textbox","id":"sh/sfy9c7eh","slide":8,"text":"Somente após comando claro; links temporários e dados limitados.","textPreview":"Somente após comando claro; links temporários e dados limitados.","textChars":64,"textLines":1,"bbox":[384,512,770,52]}
+{"kind":"shape","id":"sh/tg7q5cf2","slide":8,"bbox":[122,588,1032,1]}
+{"kind":"textbox","id":"sh/6dgraxwr","slide":8,"text":"nodeIntegration desativado  •  isolamento de contexto  •  sandbox  •  navegação restrita","textPreview":"nodeIntegration desativado  •  isolamento de contexto  •  sandbox  •  navegação restrita","textChars":88,"textLines":1,"bbox":[88,610,1090,24]}
+{"kind":"notes","id":"nt/oyy8vn","slide":8,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/src/main/index.ts\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/src/preload/index.ts\n[/Sources]"}
+{"kind":"slide","id":"sl/atc74h","slide":9,"title":"CONFIANÇA","textShapes":18}
+{"kind":"shape","id":"sh/r2p8zeh0","slide":9,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/s3y98jyl","slide":9,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/t47q1of6","slide":9,"text":"CONFIANÇA","textPreview":"CONFIANÇA","textChars":9,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/ixwr29gj","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/jy58veh4","slide":9,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/4ze94zyp","slide":9,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/507qx4za","slide":9,"text":"Transparência não exige publicar o código do produto.","textPreview":"Transparência não exige publicar o código do produto.","textChars":53,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/u9wrypgn","slide":9,"text":"A página pública pode oferecer evidências verificáveis sem expor a lógica comercial.","textPreview":"A página pública pode oferecer evidências verificáveis sem expor a lógica comercial.","textChars":84,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/va58ruh8","slide":9,"bbox":[68,194,94,5]}
+{"kind":"textbox","id":"sh/jitcv698","slide":9,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[92,246,34,34]}
+{"kind":"textbox","id":"sh/ihkvm18n","slide":9,"text":"Política de privacidade em linguagem clara","textPreview":"Política de privacidade em linguagem clara","textChars":42,"textLines":1,"bbox":[142,244,430,64]}
+{"kind":"textbox","id":"sh/5kbuxwry","slide":9,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[92,348,34,34]}
+{"kind":"textbox","id":"sh/kj2dobqt","slide":9,"text":"Mapa dos dados acessados e onde ficam","textPreview":"Mapa dos dados acessados e onde ficam","textChars":37,"textLines":1,"bbox":[142,346,430,64]}
+{"kind":"textbox","id":"sh/7mdcz694","slide":9,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[92,450,34,34]}
+{"kind":"textbox","id":"sh/6l4vq18j","slide":9,"text":"Histórico público de versões e correções","textPreview":"Histórico público de versões e correções","textChars":40,"textLines":1,"bbox":[142,448,430,64]}
+{"kind":"textbox","id":"sh/tovu1gra","slide":9,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[666,246,34,34]}
+{"kind":"textbox","id":"sh/snmdsbqp","slide":9,"text":"Hash do instalador e análise antivírus","textPreview":"Hash do instalador e análise antivírus","textChars":38,"textLines":1,"bbox":[716,244,450,64]}
+{"kind":"textbox","id":"sh/nq9cnm90","slide":9,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[666,348,34,34]}
+{"kind":"textbox","id":"sh/mp0behsf","slide":9,"text":"Canal responsável para suporte e segurança","textPreview":"Canal responsável para suporte e segurança","textChars":42,"textLines":1,"bbox":[716,346,450,64]}
+{"kind":"textbox","id":"sh/q58fmps3","slide":9,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[666,450,34,34]}
+{"kind":"textbox","id":"sh/r6hgvuto","slide":9,"text":"Demonstração real das principais funções","textPreview":"Demonstração real das principais funções","textChars":40,"textLines":1,"bbox":[716,448,450,64]}
+{"kind":"shape","id":"sh/c7qxofat","slide":9,"bbox":[88,566,1080,2]}
+{"kind":"textbox","id":"sh/d8zyxkbe","slide":9,"text":"Identidade própria  •  descrição precisa  •  nenhuma alegação de produto oficial","textPreview":"Identidade própria  •  descrição precisa  •  nenhuma alegação de produto oficial","textChars":80,"textLines":1,"bbox":[88,590,1080,34]}
+{"kind":"notes","id":"nt/atc74h","slide":9,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n- https://www.gov.br/mdr/pt-br/acesso-a-informacao/perguntas-frequentes/perguntas-e-respostas-frequentes-sobre-lgpd/quais-principios-devem-nortear-o\n[/Sources]"}
+{"kind":"slide","id":"sl/zbfp8s","slide":10,"title":"PRÓXIMO PASSO","textShapes":19}
+{"kind":"shape","id":"sh/7u90ru5k","slide":10,"bbox":[0,0,1280,8]}
+{"kind":"shape","id":"sh/svihkz65","slide":10,"bbox":[44,40,3,640]}
+{"kind":"textbox","id":"sh/twrit4nq","slide":10,"text":"PRÓXIMO PASSO","textPreview":"PRÓXIMO PASSO","textChars":13,"textLines":1,"bbox":[68,34,470,26]}
+{"kind":"textbox","id":"sh/ux0zm9ob","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1168,34,46,26]}
+{"kind":"shape","id":"sh/fy90ve5w","slide":10,"bbox":[68,666,1144,1]}
+{"kind":"textbox","id":"sh/gzihoj6h","slide":10,"text":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textPreview":"POKECENTRAL DESKTOP  •  APRESENTAÇÃO DO PRODUTO","textChars":47,"textLines":1,"bbox":[68,680,680,18]}
+{"kind":"textbox","id":"sh/hkbixonm","slide":10,"text":"O próximo marco é uma beta pequena e verificável.","textPreview":"O próximo marco é uma beta pequena e verificável.","textChars":49,"textLines":1,"bbox":[68,78,1144,60]}
+{"kind":"textbox","id":"sh/2lkzqto7","slide":10,"text":"A evolução comercial acontece depois de validar instalação, segurança e entendimento do usuário.","textPreview":"A evolução comercial acontece depois de validar instalação, segurança e entendimento do usuário.","textChars":96,"textLines":1,"bbox":[68,142,1100,46]}
+{"kind":"shape","id":"sh/3mt0ze5s","slide":10,"bbox":[68,194,94,5]}
+{"kind":"textbox","id":"sh/32pcb2x0","slide":10,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[68,246,64,38]}
+{"kind":"shape","id":"sh/i1gbixwf","slide":10,"bbox":[68,294,238,4]}
+{"kind":"textbox","id":"sh/54rudcf6","slide":10,"text":"VALIDAR","textPreview":"VALIDAR","textChars":7,"textLines":1,"bbox":[68,322,238,34]}
+{"kind":"textbox","id":"sh/43itk7el","slide":10,"text":"Instalação limpa\nLinks e contatos\nPersistência das sessões","textPreview":"Instalação limpa | Links e contatos | Persistência das sessões","textChars":58,"textLines":3,"bbox":[68,382,238,142]}
+{"kind":"textbox","id":"sh/vepcn2x4","slide":10,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,246,64,38]}
+{"kind":"shape","id":"sh/udgbexwj","slide":10,"bbox":[354,294,238,4]}
+{"kind":"textbox","id":"sh/hg7upsfa","slide":10,"text":"TESTAR","textPreview":"TESTAR","textChars":6,"textLines":1,"bbox":[354,322,238,34]}
+{"kind":"textbox","id":"sh/gfytgnep","slide":10,"text":"Grupo pequeno\nFeedback documentado\nCorreções prioritárias","textPreview":"Grupo pequeno | Feedback documentado | Correções prioritárias","textChars":57,"textLines":3,"bbox":[354,382,238,142]}
+{"kind":"textbox","id":"sh/fa9cjmx8","slide":10,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[640,246,64,38]}
+{"kind":"shape","id":"sh/e90vqhwn","slide":10,"bbox":[640,294,238,4]}
+{"kind":"textbox","id":"sh/a54filgv","slide":10,"text":"PUBLICAR","textPreview":"PUBLICAR","textChars":8,"textLines":1,"bbox":[640,322,238,34]}
+{"kind":"textbox","id":"sh/b6dwrqhg","slide":10,"text":"Página do produto\nPrivacidade e termos\nDownload verificável","textPreview":"Página do produto | Privacidade e termos | Download verificável","textChars":59,"textLines":3,"bbox":[640,382,238,142]}
+{"kind":"textbox","id":"sh/crmxkvy1","slide":10,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[926,246,64,38]}
+{"kind":"shape","id":"sh/xsvyt0zm","slide":10,"bbox":[926,294,238,4]}
+{"kind":"textbox","id":"sh/yt4fm5g7","slide":10,"text":"LANÇAR","textPreview":"LANÇAR","textChars":6,"textLines":1,"bbox":[926,322,238,34]}
+{"kind":"textbox","id":"sh/zuxgvahs","slide":10,"text":"Licença de uso\nSuporte definido\nAtualizações controladas","textPreview":"Licença de uso | Suporte definido | Atualizações controladas","textChars":56,"textLines":3,"bbox":[926,382,238,142]}
+{"kind":"textbox","id":"sh/kv6xovyx","slide":10,"text":"PokeCentral Desktop","textPreview":"PokeCentral Desktop","textChars":19,"textLines":1,"bbox":[68,584,610,34]}
+{"kind":"textbox","id":"sh/lwfyx0zi","slide":10,"text":"Uma central local para organizar antes de compartilhar.","textPreview":"Uma central local para organizar antes de compartilhar.","textChars":55,"textLines":1,"bbox":[68,622,930,28]}
+{"kind":"notes","id":"nt/zbfp8s","slide":10,"text":"[Sources]\n- C:/Users/MikPz/Desktop/IA/PROJETO POKE IDLE WOLRD SITE/pokecentral-desktop/CONTEXTO_POKECENTRAL_DESKTOP.txt\n[/Sources]"}

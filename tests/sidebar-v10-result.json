@@ -1,0 +1,14 @@
+{
+  "expanded": {
+    "width": 310,
+    "labels": true,
+    "accountText": true
+  },
+  "collapsed": {
+    "width": 72,
+    "labelsHidden": true,
+    "accountTextHidden": true,
+    "persisted": "true",
+    "toggleLabel": "Expandir menu lateral"
+  }
+}

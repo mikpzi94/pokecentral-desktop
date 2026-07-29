@@ -1,0 +1,18 @@
+{
+  "controls": {
+    "reloadButtons": 2,
+    "expandButtons": 2
+  },
+  "controlCalls": [
+    {
+      "slot": 2,
+      "action": "reload"
+    }
+  ],
+  "imageSize": {
+    "width": 1200,
+    "height": 630
+  },
+  "hasConfidenceText": true,
+  "hasImage": true
+}

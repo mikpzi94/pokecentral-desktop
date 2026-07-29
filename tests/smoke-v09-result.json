@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "species": "Charizard",
+      "potential": "Bom",
+      "score": "69/100",
+      "power": "21"
+    },
+    {
+      "species": "Golem",
+      "potential": "Bom",
+      "score": "64/100",
+      "power": "9.896"
+    }
+  ],
+  "quality": {
+    "w": 94,
+    "h": 40
+  },
+  "potential": {
+    "w": 94,
+    "h": 40
+  },
+  "sidebarRight": 285,
+  "navInside": true,
+  "lineLeft": "301px",
+  "scopeInside": true,
+  "scopeRows": 1
+}

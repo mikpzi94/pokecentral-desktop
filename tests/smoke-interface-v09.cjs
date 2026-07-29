@@ -1,0 +1,18 @@
+const { app, BrowserWindow, ipcMain } = require('electron')
+const path=require('node:path'); const fs=require('node:fs')
+app.whenReady().then(async()=>{
+  for(const c of ['launcher:hide-layout','launcher:update-layout','launcher:control']) ipcMain.handle(c,()=>null)
+  ipcMain.handle('launcher:show-layout',()=>[]); ipcMain.handle('launcher:inventory',()=>null)
+  const win=new BrowserWindow({width:1024,height:760,show:false,webPreferences:{preload:path.join(__dirname,'..','out','preload','index.js'),contextIsolation:true,sandbox:true}})
+  await win.loadFile(path.join(__dirname,'..','out','renderer','index.html'))
+  await win.webContents.executeJavaScript(`localStorage.setItem('pokecentral.desktop.v1',JSON.stringify({accounts:[{id:'a1',name:'Conta 1',slot:1,status:'ready',characterName:'MotoMoto'}],pokemon:[{id:'p1',accountId:'a1',speciesId:6,species:'Charizard',level:1,iv:132,quality:'1.713',shiny:false,stats:{hp:2,attack:2,defense:2,specialAttack:2,specialDefense:2,speed:2},source:'assisted',importedAt:new Date().toISOString()},{id:'p2',accountId:'a1',speciesId:76,species:'Golem',level:585,iv:140,quality:'1.526',shiny:false,stats:{hp:1136,attack:1444,defense:1542,specialAttack:796,specialDefense:632,speed:935},source:'assisted',importedAt:new Date().toISOString()}],items:[]}))`)
+  await win.webContents.reload(); await win.webContents.executeJavaScript('document.fonts.ready.then(()=>true)'); await new Promise(r=>setTimeout(r,180)); await win.webContents.executeJavaScript(`document.querySelector('.nav-item').click()`); await new Promise(r=>setTimeout(r,150))
+  const result=await win.webContents.executeJavaScript(`{
+    const quality=document.querySelector('.quality-badge').getBoundingClientRect(); const potential=document.querySelector('.potential-badge').getBoundingClientRect(); const sidebar=document.querySelector('.sidebar').getBoundingClientRect(); const nav=[...document.querySelectorAll('.nav-item')].map(b=>b.getBoundingClientRect()); const scope=document.querySelector('.inventory-account-filter').getBoundingClientRect(); const scopeButtons=[...document.querySelectorAll('.inventory-account-filter button')].map(b=>b.getBoundingClientRect());
+    const rows=[...document.querySelectorAll('.inventory-section table tbody tr')].map(row=>({species:row.children[1]?.textContent?.trim(),potential:row.querySelector('.potential-badge')?.childNodes[0]?.textContent?.trim(),score:row.querySelector('.potential-badge small')?.textContent,power:row.querySelector('.power-value')?.textContent})); ({rows,quality:{w:quality.width,h:quality.height},potential:{w:potential.width,h:potential.height},sidebarRight:sidebar.right,navInside:nav.every(r=>r.right<sidebar.right),lineLeft:getComputedStyle(document.querySelector('main'),'::before').left,scopeInside:scopeButtons.every(r=>r.right<=scope.right+0.5),scopeRows:new Set(scopeButtons.map(r=>Math.round(r.top))).size})
+  }`)
+  fs.writeFileSync(path.join(__dirname,'smoke-v09-result.json'),JSON.stringify(result,null,2))
+  const charizard=result.rows.find(row=>row.species?.includes('Charizard')); const golem=result.rows.find(row=>row.species?.includes('Golem'))
+  const valid=charizard?.potential==='Bom'&&charizard?.score==='69/100'&&charizard?.power==='21'&&golem?.potential==='Bom'&&golem?.score==='64/100'&&golem?.power==='9.896'&&result.quality.w===result.potential.w&&result.quality.h===result.potential.h&&result.navInside&&result.lineLeft==='301px'&&result.scopeInside&&result.scopeRows>=1
+  win.destroy(); app.exit(valid?0:1)
+}).catch(e=>{console.error(e);app.exit(1)})
